@@ -1,0 +1,121 @@
+.container_content_inside_card{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+.left_content_inside{
+    max-width: 60%;
+}
+
+.list_gioi_thieu{
+    display: flex;
+    gap: 90px;
+}
+
+.list_gt{
+    padding-left: 0;
+}
+
+.list_gt li{
+    margin-bottom: 15px;
+    list-style-type: none;
+    font-size: 15px;
+}
+.list_gt li::before{
+     content: "✔ ";
+  
+     
+}
+
+.right_content_inside{
+    max-width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+   
+}
+.right_content_inside img{
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+}
+.btn_right_content_inside{
+    margin: 10px;
+    background-color: #2FA4E7;
+    font-size:20px;
+    border: none;
+    color: white;
+    padding: 10px 20px ;
+    border-radius: 20px;
+    transition: transform  0.3s ease;
+}
+
+.btn_right_content_inside:hover{
+    transform: scale(1.05);
+}
+
+.right_list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right_list li{
+    list-style-type: none;
+}
+
+.right_list i{
+    color: gray;
+}
+.list_dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.list_title{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    background-color: #ececec;
+    border-radius: 10px;
+    padding: 0 8px;
+}
+
+.dropdown {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+.dropdown.active {
+    display: block;
+}
+
+
+.dropdown li{
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: 1px solid #F5F5F5
+}
+
+.thoi_luong_khoa_hoc{
+    margin-bottom: 10px;
+}
+
+.dropdown li{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.title{
+    cursor: pointer;
+}
+
+.left_gioi_thieu_1 p{
+    font-size: 15px;
+}
+
+
