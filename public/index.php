@@ -21,8 +21,10 @@
       <div class="header-inner">
         <div class="header-inner-left">
           <a href="/" class="logo" aria-label="F8 - Home">
-            <span class="logo-badge">36Tech</span>
-            <span class="site-title">Học Lập Trình </span>
+            <span class="logo-badge">
+              <img src="assets/image/logo36Tech.png" width="44px" height="44px" />
+            </span>
+            <span class="site-title">36TECH - Lập trình Fullstack</span>
           </a>
         </div>
         <div class="header-inner-center">
