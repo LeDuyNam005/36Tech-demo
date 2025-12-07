@@ -37,6 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['fullname']   = $user['fullname'];
                 $_SESSION['email']      = $user['email'];
                 $_SESSION['login_time'] = date('d/m/Y H:i:s');
+                $_SESSION['avatar'] =  $user['avatar'] ?? '../image/default-avatar.jpg';
 
                 // lưu cookie 5 phút
                 $token = bin2hex(random_bytes(16));
@@ -107,7 +108,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             window.addEventListener('DOMContentLoaded', function() {
                 showToast('success', '<?php echo addslashes($success); ?>');
                 setTimeout(() => {
-                    window.location.href = '#';
+                    window.location.href = '../../index.php';
                 }, 1500);
             });
         <?php endif; ?>

@@ -12,8 +12,10 @@
 </head>
 
 <body>
+  <?php
+  session_start();
+  ?>
   <div class="page">
-
     <!-- Header -->
     <header class="header">
       <div class="header-inner">
@@ -34,9 +36,19 @@
         </div>
         <div class="header-inner-right">
           <nav class="auth">
-            <a class="btn btn-ghost" href="./assets/php/register.php ">Đăng ký</a>
+            <?php if (!isset($_SESSION['user_id'])): ?>
+            <a class="btn btn-ghost" href="./assets/php/register.php">Đăng ký</a>
             <a class="btn btn-primary" href="./assets/php/login.php">Đăng nhập</a>
-          </nav>
+              <?php else: ?>
+            <div class="user-info" style="display:flex; align-items:center; gap:10px;">
+                <img src="./assets/image/<?= !empty($_SESSION['avatar']) ? $_SESSION['avatar'] : 'default-avatar.jpg' ?>" 
+                style="width:32px; height:32px; border-radius:50%; object-fit:cover;">
+          <span style="font-weight:600;"><?=$_SESSION['username']?></span>
+
+          <a href="./assets/php/logout.php" class="btn btn-ghost" style="color:red;">Đăng xuất</a>
+            </div>
+            <?php endif; ?>
+</nav>
         </div>
       </div>
     </header>

@@ -30,11 +30,13 @@ function showToast(type, msg) {
   if (oldToast) {
     oldToast.remove();
   }
+
   const t = document.createElement("div");
   t.className = `simple-toast ${type}`;
   t.textContent = msg;
   document.body.appendChild(t);
   // timeout chờ hiện/xoá thông báo
+
   setTimeout(() => {
     t.classList.add("show");
   }, 10);
