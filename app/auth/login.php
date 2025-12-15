@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!empty($errors)) {
         $error = implode(' & ', $errors);
     } else {
-        $sql = "SELECT id, fullname, email, password FROM users WHERE username = '$username' LIMIT 1";
+        $sql = "SELECT id, fullname, email, password, role, avatar FROM users WHERE username = '$username' LIMIT 1";
         $result = mysqli_query($conn, $sql);
 
         if (!$result || mysqli_num_rows($result) === 0) {
@@ -38,6 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['email']      = $user['email'];
                 $_SESSION['login_time'] = date('d/m/Y H:i:s');
                 $_SESSION['avatar'] =  $user['avatar'] ?? '../image/default-avatar.jpg';
+                $_SESSION['role'] =  $user['role'];
 
                 // lưu cookie 5 phút
                 $token = bin2hex(random_bytes(16));
@@ -57,16 +58,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Đăng nhập - 36Tech</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/login-module.css">
+    <meta charset="UTF-8">
+    <title>Đăng nhập - 36Tech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/login-module.css">
 </head>
+
 <body>
     <form id="login-form" method="POST" autocomplete="off" onsubmit="handleLogin(event)" class="auth-form auth-form--login">
         <div class="logo">
-            <img width="75" height="75" src="../image/logo36Tech.png" alt="36Tech" />
+            <img width="75" height="75" src="../../public/assets/image/logo36Tech.png" alt="36Tech" />
         </div>
 
         <h3>Đăng nhập vào 36Tech</h3>
@@ -90,28 +93,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <p class="terms">
             Việc bạn tiếp tục sử dụng trang web này đồng nghĩa bạn đồng ý với
-            <a href="../../termofservices.html">điều khoản sử dụng</a> của chúng tôi.
+            <a href="./html/termofservices.html">điều khoản sử dụng</a> của chúng tôi.
         </p>
     </form>
-    <script src="../js/login.js"></script>
+    <script src="./js/login.js"></script>
     <script>
         // Hiển thị notification nếu có lỗi từ PHP
-        <?php 
+        <?php
         if ($error): ?>
             window.addEventListener('DOMContentLoaded', function() {
                 showToast('error', '<?php echo addslashes($error); ?>');
             });
         <?php endif; ?>
         // Hiển thị notification thành công rồi redirect
-        <?php 
+        <?php
         if ($success && isset($redirect)): ?>
             window.addEventListener('DOMContentLoaded', function() {
                 showToast('success', '<?php echo addslashes($success); ?>');
                 setTimeout(() => {
-                    window.location.href = '../../index.php';
+                    window.location.href = '../../public/index.php';
                 }, 1500);
             });
         <?php endif; ?>
     </script>
 </body>
+
 </html>

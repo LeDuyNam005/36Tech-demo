@@ -13,7 +13,8 @@
 
 <body>
   <?php
-  session_start();
+  require '../app/auth/auth.php';
+  requireLogin();
   ?>
   <div class="page">
     <!-- Header -->
@@ -38,28 +39,48 @@
         </div>
         <div class="header-inner-right">
           <nav class="auth">
-            <?php 
-            if (!isset($_SESSION['user_id'])): 
+            <?php
+            // Chưa đăng nhập -> Hiện nút Đăng ký/Đăng nhập
+            if (!isset($_SESSION['user_id'])):
             ?>
-            <a class="btn btn-ghost" href="./assets/php/register.php">Đăng ký</a>
-            <a class="btn btn-primary" href="./assets/php/login.php">Đăng nhập</a>
-              <?php 
-            else: 
-            ?>
-            <div class="user-info" style="display:flex; align-items:center; gap:10px;">
-  <div style="display:flex; align-items:center; gap:8px; padding: 3px 12px; 
-              border-radius:999px; border:1px solid #218080;">
-    <img src="./assets/image/<?= !empty($_SESSION['avatar']) ? $_SESSION['avatar'] : 'default-avatar.jpg' ?>" 
-        style="width:28px; height:28px; border-radius:50%;">
+              <a class="btn btn-ghost" href="./assets/php/register.php">Đăng ký</a>
+              <a class="btn btn-primary" href="./assets/php/login.php">Đăng nhập</a>
 
-    <span style="font-weight:600;"><?= $_SESSION['fullname'] ?></span>
-  </div>
-  <a href="./assets/php/logout.php" class="btn btn-ghost" style="color:red;">Đăng xuất</a>
-</div>
-            <?php 
+            <?php
+            // Đã đăng nhập
+            else:
+            ?>
+              <div style="display: flex; align-items: center; gap: 10px;">
+
+                <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'): ?>
+                  <a href="../app/admin/dashboard.php" class="btn btn-primary" style="background-color: #ff6b6b; border-color: #ff6b6b; display: flex; align-items: center; gap: 6px; padding: 12px;">
+                    <i class="fa-solid fa-gauge-high"></i> <span style="font-size: 14px;">Dashboard</span></a>
+                <?php endif; ?>
+
+                <a href="../app/auth/profile.php"
+                  style="display:flex; align-items:center; gap:8px; padding: 4px 12px; 
+                      border-radius:999px; border:1px solid #218080; 
+                      text-decoration: none; color: inherit; background: #fff;">
+
+                  <?php
+                  $avatarName = !empty($_SESSION['avatar']) ? $_SESSION['avatar'] : 'default-avatar.jpg';
+                  $path = './assets/image/' . $avatarName;
+                  ?>
+                  <img src="<?php echo $path ?>" alt="Avatar" style="width:28px; height:28px; border-radius:50%; object-fit: cover; border: 1px solid #eee;">
+                  <span style="font-weight:600; font-size: 14px; color: #218080;">
+                    <?= htmlspecialchars($_SESSION['fullname']) ?>
+                  </span>
+                </a>
+
+                <a href="../app/auth/logout.php" class="btn btn-ghost" style="color:red; font-size: 19px;">
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                </a>
+
+              </div>
+            <?php
             endif;
             ?>
-</nav>
+          </nav>
         </div>
       </div>
     </header>

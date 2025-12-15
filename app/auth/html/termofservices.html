@@ -189,39 +189,80 @@
             text-decoration: underline;
         }
 
-        /* Footer */
+        /*_______________Footer____________________ */
         .footer {
-            background: #0f1114;
+            background-color: #0f1114;
+            /* deep dark */
             color: #cbd5db;
             padding: 48px 0 24px;
             font-size: 15px;
-            margin-top: 60px;
         }
 
         .footer-inner {
             width: 96%;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: 320px 1fr 1fr 1fr 1fr;
             gap: 36px;
+            align-items: start;
         }
 
         .footer-inner h4 {
-            color: #fff;
+            color: #ffffff;
             font-size: 16px;
-            margin-bottom: 14px;
+            margin: 0 0 14px 0;
+            letter-spacing: 0.2px;
+        }
+
+        .footer-inner p {
+            color: #99a0a6;
+            line-height: 1.6;
+            margin: 0 0 10px 0;
+        }
+
+        .footer-inner ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .footer-inner ul li {
+            margin: 8px 0;
         }
 
         .footer-inner a {
             color: #bfc8cd;
             text-decoration: none;
-            display: block;
-            margin-bottom: 10px;
-            font-size: 14px;
         }
 
         .footer-inner a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .footer-inner>div:first-child .logo-badge {
+            width: 40px;
+            height: 40px;
+            font-size: 14px;
+            border-radius: 8px;
+        }
+
+        .footer-inner .social {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .footer-inner .social a {
+            display: inline-flex;
+            width: 38px;
+            height: 38px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            background: #151617;
             color: #fff;
+            text-decoration: none;
         }
 
         .footer-bottom {
@@ -229,9 +270,17 @@
             margin: 18px auto 0;
             padding-top: 18px;
             border-top: 1px solid rgba(255, 255, 255, 0.04);
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             color: #8f98a0;
             font-size: 14px;
+        }
+
+        .footer-bottom a {
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
         }
 
         .logo-badge img {
@@ -272,7 +321,7 @@
                 <div class="site-title">36Tech</div>
             </a>
             <nav class="nav-links">
-                <a href="./index.html">Trang chủ</a>
+                <a href="./index.php">Trang chủ</a>
                 <a href="#about">Về chúng tôi</a>
             </nav>
         </div>
@@ -442,35 +491,62 @@
     </main>
 
     <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-inner">
-            <div>
-                <div class="logo-badge">
-                    <img src="./assets/image/logo36Tech.png" width="50px" height="50px">
-                </div>
-                <p style="margin-top: 10px;">36Tech - Học Lập Trình Để Đi Làm</p>
+            <div class="footer-col contact">
+                <a href="/" class="logo" aria-label="36Tech - Home">
+                    <img style="border-radius: 10px;" src="./assets/image/logo36Tech.png" alt="" width="50px"
+                        height="50px">
+
+                </a>
+                <p>Điện thoại: 09 6148 0702<br>
+                    Email: contact@36Tech.edu.vn<br>
+                    Địa chỉ: Số 18, phố Viên, Đức Thắng, Bắc Từ Liêm, Hà Nội</p>
+                <img src="./assets/image/DCMA.png" alt="DMCA Protected"
+                    style="width:120px; margin-top:12px; display:block">
             </div>
-            <div>
-                <h4>Sản Phẩm</h4>
-                <a href="#">Khóa Học</a>
-                <a href="#">Lộ Trình Học</a>
-                <a href="#">Cộng Đồng</a>
+
+            <div class="footer-col">
+                <h4>VỀ 36Tech</h4>
+                <ul>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Điều khoản</a></li>
+                    <li><a href="#">Bảo mật</a></li>
+                </ul>
             </div>
-            <div>
-                <h4>Công Ty</h4>
-                <a href="#">Về Chúng Tôi</a>
-                <a href="#">Liên Hệ</a>
-                <a href="#">Tuyển Dụng</a>
+
+            <div class="footer-col">
+                <h4>SẢN PHẨM</h4>
+                <ul>
+                    <li><a href="#">Khóa học CSS</a></li>
+                    <li><a href="#">Khóa học javascript</a></li>
+                    <li><a href="#">Khóa học nhập môn cntt </a></li>
+                    <li><a href="#">Khóa học C++</a></li>
+                    <li><a href="#">Khóa học Java</a></li>
+                    <li><a href="#">Khóa học python</a></li>
+                </ul>
             </div>
-            <div>
-                <h4>Pháp Lý</h4>
-                <a href="#">Điều Khoản Sử Dụng</a>
-                <a href="#">Chính Sách Bảo Mật</a>
-                <a href="#">Chính Sách Cookie</a>
+
+
+
+            <div class="footer-col">
+                <h4>CÔNG TY CỔ PHẦN CÔNG NGHỆ GIÁO DỤC F8</h4>
+                <ul>
+                    <li><strong>Mã số thuế:</strong> 0000000000</li>
+                    <li><strong>Ngày thành lập:</strong> 01/09/2025</li>
+                    <li><strong>Lĩnh vực hoạt động:</strong> Giáo dục, công nghệ - lập trình.</li>
+                </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 36Tech. Tất cả các quyền được bảo lưu.</p>
+            <span>© 2025 36Tech. Nền tảng học lập trình hàng đầu Việt Nam</span>
+            <div class="social" style="display:flex; gap:12px">
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
         </div>
     </footer>
 </body>

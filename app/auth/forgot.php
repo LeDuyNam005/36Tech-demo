@@ -12,11 +12,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Validation
     $errors = [];
-
     if (empty($username)) $errors[] = 'Nhập tên tài khoản';
     if (empty($email)) $errors[] = 'Nhập email';
     else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) $errors[] = 'Email không hợp lệ';
-
     if (empty($newpw)) $errors[] = 'Nhập mật khẩu mới';
     else if (strlen($newpw) < 6)  $errors[] = 'Mật khẩu mới ít nhất 6 ký tự';
 
@@ -34,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // hash pw mới
             $hashedPassword = password_hash($newpw, PASSWORD_BCRYPT);
             // update pw
-            $sql_update = "UPDATE users SET password = '$hashedPassword' WHERE id = " . $user['id'] . "LIMIT 1";
+            $sql_update = "UPDATE users SET password = '$hashedPassword' WHERE id = " . $user['id'] . " LIMIT 1";
 
             if (mysqli_query($conn, $sql_update)) {
                 $success  = 'Đã đổi mật khẩu thành công! Vui lòng đăng nhập lại.';
@@ -58,13 +56,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <title>Quên mật khẩu - 36Tech</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/login-module.css">
+    <link rel="stylesheet" href="./css/login-module.css">
 </head>
 
 <body>
     <form id="forgot-form" method="POST" autocomplete="off" onsubmit="handleForgot(event)" class="auth-form auth-form--forgot">
         <div class="logo">
-            <img width="75" height="75" src="../image/logo36Tech.png" alt="36Tech" />
+            <img width="75" height="75" src="../../public/assets/image/logo36Tech.png" alt="36Tech" />
         </div>
         <h3>Quên mật khẩu</h3>
         <label for="username">Tên đăng nhập</label>
@@ -85,26 +83,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </form>
 </body>
 
-    <script src="../js/forgot.js"></script>
-    <script>
-        // có lỗi -> hiển thị thông báo
-        <?php 
-        if ($error): ?>
-            window.addEventListener('DOMContentLoaded', function() {
-                showToast('error', '<?php echo addslashes($error); ?>');
-            });
-        <?php endif; ?>
+<script src="./js/forgot.js"></script>
+<script>
+    // có lỗi -> hiển thị thông báo
+    <?php
+    if ($error): ?>
+        window.addEventListener('DOMContentLoaded', function() {
+            showToast('error', '<?php echo addslashes($error); ?>');
+        });
+    <?php endif; ?>
 
-        // nếu hiển thị thông báo thành công -> chuyển hướng
-        <?php if ($success && isset($redirect)): ?>
-            window.addEventListener('DOMContentLoaded', function() {
-                showToast('success', '<?php echo addslashes($success); ?>');
-                setTimeout(() => {
-                    window.location.href = 'login.php';
-                }, 1500);
-            });
-        <?php endif; ?>
-    </script>
+    // nếu hiển thị thông báo thành công -> chuyển hướng
+    <?php if ($success && isset($redirect)): ?>
+        window.addEventListener('DOMContentLoaded', function() {
+            showToast('success', '<?php echo addslashes($success); ?>');
+            setTimeout(() => {
+                window.location.href = 'login.php';
+            }, 1500);
+        });
+    <?php endif; ?>
+</script>
 </body>
 
 </html>

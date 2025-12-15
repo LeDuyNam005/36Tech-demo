@@ -57,16 +57,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <title>Đăng ký tài khoản - 36Tech</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/login-module.css">
+    <link rel="stylesheet" href="./css/login-module.css">
 </head>
+
 <body>
     <form id="register-form" method="POST" autocomplete="off" onsubmit="handleRegister(event)" class="auth-form auth-form--register">
         <div class="logo">
-            <img width="75" height="75" src="../image/logo36Tech.png" alt="36Tech" />
+            <img width="75" height="75" src="../../public/assets/image/logo36Tech.png" alt="36Tech" />
         </div>
         <h3>Đăng ký tài khoản mới</h3>
         <!-- họ tên + email -->
@@ -76,8 +78,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <input id="fullname" name="fullname" placeholder="Họ và tên" type="text">
             </div>
             <div class="form-field">
-        <label for="username">Tên tài khoản</label>
-        <input id="username" name="username" placeholder="Tên tài khoản" type="text">
+                <label for="username">Tên tài khoản</label>
+                <input id="username" name="username" placeholder="Tên tài khoản" type="text">
             </div>
         </div>
 
@@ -105,7 +107,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             Đã có tài khoản? <a href="login.php">Đăng nhập</a>
         </div>
     </form>
-    <script src="../js/register.js"></script>
+    <script src="./js/register.js"></script>
     <script>
         // Hiển thị notification nếu có lỗi từ PHP
         <?php if ($error): ?>
