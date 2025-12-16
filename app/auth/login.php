@@ -68,6 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <body>
     <form id="login-form" method="POST" autocomplete="off" onsubmit="handleLogin(event)" class="auth-form auth-form--login">
+        <br>
         <div class="logo">
             <img width="75" height="75" src="../../public/assets/image/logo36Tech.png" alt="36Tech" />
         </div>
@@ -95,6 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             Việc bạn tiếp tục sử dụng trang web này đồng nghĩa bạn đồng ý với
             <a href="./html/termofservices.html">điều khoản sử dụng</a> của chúng tôi.
         </p>
+        <br>
     </form>
     <script src="./js/login.js"></script>
     <script>

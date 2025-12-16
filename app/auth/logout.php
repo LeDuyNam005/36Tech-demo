@@ -12,17 +12,19 @@ if (isset($_GET['confirm']) && $_GET['confirm'] === 'yes') {
     setcookie('username', '', time() - 3600, '/', '', false, false);
 
     // Redirect về trang chủ
-    header('Location: /PJ/36Tech-demo/public/');
+    header('Location: ../../public/index.php');
     exit;
 } else {
-    ?>
+?>
     <!DOCTYPE html>
     <html lang="vi">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Đăng xuất</title>
     </head>
+
     <body>
         <script>
             if (confirm('Bạn có chắc chắn muốn đăng xuất?')) {
@@ -34,7 +36,8 @@ if (isset($_GET['confirm']) && $_GET['confirm'] === 'yes') {
             }
         </script>
     </body>
+
     </html>
-    <?php
+<?php
 }
 ?>

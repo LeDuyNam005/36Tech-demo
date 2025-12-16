@@ -67,6 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <body>
     <form id="register-form" method="POST" autocomplete="off" onsubmit="handleRegister(event)" class="auth-form auth-form--register">
+        <br>
         <div class="logo">
             <img width="75" height="75" src="../../public/assets/image/logo36Tech.png" alt="36Tech" />
         </div>
@@ -106,6 +107,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="form-footer">
             Đã có tài khoản? <a href="login.php">Đăng nhập</a>
         </div>
+        <br>
     </form>
     <script src="./js/register.js"></script>
     <script>

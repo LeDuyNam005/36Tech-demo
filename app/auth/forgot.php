@@ -61,6 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <body>
     <form id="forgot-form" method="POST" autocomplete="off" onsubmit="handleForgot(event)" class="auth-form auth-form--forgot">
+        <br>
         <div class="logo">
             <img width="75" height="75" src="../../public/assets/image/logo36Tech.png" alt="36Tech" />
         </div>
@@ -79,7 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <span> · </span>
             <a href="register.php">Đăng ký</a>
         </div>
-
+        <br>
     </form>
 </body>
 

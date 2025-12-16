@@ -12,20 +12,18 @@
 </head>
 
 <body>
-  <?php
+  <div class="page">
+    <?php
   require '../app/auth/auth.php';
   requireLogin();
   ?>
-  <div class="page">
     <!-- Header -->
     <header class="header">
       <div class="header-inner">
         <div class="header-inner-left">
-          <a href="#" class="logo" aria-label="F8 - Home">
-            <span class="logo-badge">
-              <img src="assets/image/logo36Tech.png" width="44px" height="44px" />
-            </span>
-            <span class="site-title">36TECH - Lập trình Fullstack</span>
+          <a href="/" class="logo" aria-label="F8 - Home">
+            <span class="logo-badge">36Tech</span>
+            <span class="site-title">Học Lập Trình </span>
           </a>
         </div>
         <div class="header-inner-center">
@@ -40,46 +38,43 @@
         <div class="header-inner-right">
           <nav class="auth">
             <?php
-            // Chưa đăng nhập -> Hiện nút Đăng ký/Đăng nhập
-            if (!isset($_SESSION['user_id'])):
+            if (!isset($_SESSION['user_id'])) {
             ?>
-              <a class="btn btn-ghost" href="./assets/php/register.php">Đăng ký</a>
-              <a class="btn btn-primary" href="./assets/php/login.php">Đăng nhập</a>
+            <a class="btn btn-ghost" href="./assets/php/register.php">Đăng ký</a>
+            <a class="btn btn-primary" href="./assets/php/login.php">Đăng nhập</a>
 
             <?php
-            // Đã đăng nhập
-            else:
+            } else {
             ?>
-              <div style="display: flex; align-items: center; gap: 10px;">
+            <div style="display: flex; align-items: center; gap: 10px;">
 
-                <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'): ?>
-                  <a href="../app/admin/dashboard.php" class="btn btn-primary" style="background-color: #ff6b6b; border-color: #ff6b6b; display: flex; align-items: center; gap: 6px; padding: 12px;">
-                    <i class="fa-solid fa-gauge-high"></i> <span style="font-size: 14px;">Dashboard</span></a>
-                <?php endif; ?>
+              <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') { ?>
+              <a href="../app/admin/dashboard.php" class="btn btn-primary"
+                style="background-color: #ff6b6b; border-color: #ff6b6b; display: flex; align-items: center; gap: 6px; padding: 12px;">
+                <i class="fa-solid fa-gauge-high"></i> <span style="font-size: 14px;">Dashboard</span></a>
+              <?php } ?>
 
-                <a href="../app/auth/profile.php"
-                  style="display:flex; align-items:center; gap:8px; padding: 4px 12px; 
+              <a href="../app/auth/profile.php" style="display:flex; align-items:center; gap:8px; padding: 4px 12px; 
                       border-radius:999px; border:1px solid #218080; 
                       text-decoration: none; color: inherit; background: #fff;">
 
-                  <?php
+                <?php
                   $avatarName = !empty($_SESSION['avatar']) ? $_SESSION['avatar'] : 'default-avatar.jpg';
                   $path = './assets/image/' . $avatarName;
                   ?>
-                  <img src="<?php echo $path ?>" alt="Avatar" style="width:28px; height:28px; border-radius:50%; object-fit: cover; border: 1px solid #eee;">
-                  <span style="font-weight:600; font-size: 14px; color: #218080;">
-                    <?= htmlspecialchars($_SESSION['fullname']) ?>
-                  </span>
-                </a>
+                <img src="<?php echo $path ?>" alt="Avatar"
+                  style="width:28px; height:28px; border-radius:50%; object-fit: cover; border: 1px solid #eee;">
+                <span style="font-weight:600; font-size: 14px; color: #218080;">
+                  <?= htmlspecialchars($_SESSION['fullname']) ?>
+                </span>
+              </a>
 
-                <a href="../app/auth/logout.php" class="btn btn-ghost" style="color:red; font-size: 19px;">
-                  <i class="fa-solid fa-right-from-bracket"></i>
-                </a>
+              <a href="../app/auth/logout.php" class="btn btn-ghost" style="color:red; font-size: 19px;">
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </a>
 
-              </div>
-            <?php
-            endif;
-            ?>
+            </div>
+            <?php } ?>
           </nav>
         </div>
       </div>
@@ -108,263 +103,213 @@
 
 
       </div>
-
       <!--Main phải  -->
       <div class="main-right">
-        <div class="banner">
-          Quảng cáo - Phàn này của Huy nhé
+
+        <div class="main-right">
+          <!-- banner The Huy -->
+          <div class="banner">
+            <div class="slider-container">
+              <button class="prev">‹</button>
+              <div class="slides">
+                <div class="slide">
+                  <div class="content">
+                    <h2><a href="#">Học HTML CSS cho người mới 👑</a></h2>
+                    <p>Thực hành dự án với Figma, hàng trăm bài tập, hướng dẫn 100% bởi Sơn Đặng, tặng kèm Flashcards,
+                      v.v.</p>
+                    <button class="cta">HỌC THỬ MIỄN PHÍ</button>
+                  </div>
+                  <div class="image">
+                    <a href="#"><img src="./assets/image/html.png" alt="" style="height: 250px; width: 450px;"></a>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="content">
+                    <h2><a href="#">Học ReactJS Miễn Phí!</a></h2>
+                    <p>Khóa học ReactJS từ cơ bản tới nâng cao. Kết quả của khóa học này là bạn có thể làm hầu hết các
+                      dự
+                      án thường gặp với ReactJS.</p>
+                    <button class="cta">HỌC THỬ MIỄN PHÍ</button>
+                  </div>
+                  <div class="image">
+                    <a href="#"><img src="./assets/image/Banner_web_ReactJS.png" alt=""
+                        style="height: 250px; width: 450px;"></a>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="content">
+                    <h2><a href="#">Thành Quả của Học Viên</a></h2>
+                    <p>Để đạt được kết quả tốt trong mọi việc ta cần xác định mục tiêu rõ ràng cho việc đó. Học lập
+                      trình
+                      cũng không là ngoại lệ.</p>
+                    <button class="cta">XEM THÀNH QUẢ</button>
+                  </div>
+                  <div class="image">
+                    <a href="#"><img src="./assets/image/Banner_01_2.png" alt=""
+                        style="height: 250px; width: 450px;"></a>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="content">
+                    <h2><a href="#">Lớp học FullStack Online</a></h2>
+                    <p>Học online trực tiếp qua Zoom, phù hợp nếu bạn muốn được review code, chấm bài trực tiếp bởi
+                      giảng
+                      viên và trợ giảng giàu kinh nghiệm. Giờ học linh hoạt, phù hợp cả sinh viên và người đi làm.</p>
+                    <button class="cta">TƯ VẤN MIỄN PHÍ</button>
+                  </div>
+                  <div class="image">
+                    <a href="#"><img src="./assets/image/banner-fs.png" alt="" style="height: 250px; width: 450px;"></a>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="content">
+                    <h2><a href="#">36Tech trên Youtube</a></h2>
+                    <p>36Tech được nhắc tới ở mọi nơi, ở đâu có cơ hội việc làm cho nghề IT và có những con người yêu
+                      thích
+                      lập trình 36Tech sẽ ở đó.</p>
+                    <button class="cta">ĐĂNG KÍ KÊNH</button>
+                  </div>
+                  <div class="image">
+                    <a href="#"><img src="./assets/image/Banner_03_youtube.png" alt=""
+                        style="height: 250px; width: 450px;"></a>
+                  </div>
+                </div>
+              </div>
+              <button class="next">›</button>
+            </div>
+          </div>
+
+
+          <div class="container_khoa_hoc">
+            <div class="c1"> <!--  hàng 1 -->
+              <h2>Khóa học cơ bản</h2>
+              <div class="list_khoa_hoc">
+                <div class="card_box">
+                  <div><img src="./models/img/lap_trinh_c.png" class="img_card"> </div>
+                  <div class="info">
+                    <a href="./assets/php/nextpage.php" style="font-size: 20px;">Lập trình C cho người mới bắt đầu</a>
+                    <div class="btoom">
+                      <p><i class="fa-regular fa-circle-play"></i>9</p>
+                      <p><i class="fa-regular fa-clock"></i>3h12p</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card_box">
+                  <div><img src="./models/img/c++.jpg" class="img_card"> </div>
+                  <div class="info">
+                    <a href="./assets/php/nextpage.php" style="font-size: 20px;">Khoá học C++ cơ bản</a>
+                    <div class="btoom">
+                      <p><i class="fa-regular fa-circle-play"></i>9</p>
+                      <p><i class="fa-regular fa-clock"></i>3h12p</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card_box">
+                  <div><img src="./models/img/jscoban.jpg" class="img_card"> </div>
+                  <div class="info">
+                    <a href="#" style="font-size: 20px;">Javascript cơ bản</a>
+                    <div class="btoom">
+                      <p><i class="fa-regular fa-circle-play"></i>9</p>
+                      <p><i class="fa-regular fa-clock"></i>3h12p</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card_box">
+                  <div><img src="./models/img/reactJS.jpg" class="img_card"> </div>
+                  <div class="info">
+                    <a href="#" style="font-size: 20px;">ReactJS cơ bản</a>
+                    <div class="btoom">
+                      <p><i class="fa-regular fa-circle-play"></i>9</p>
+                      <p><i class="fa-regular fa-clock"></i>3h12p</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card_box">
+                  <div><img src="./models/img/python.jpg" class="img_card"> </div>
+                  <div class="info">
+                    <a href="#" style="font-size: 20px;">Python cơ bản</a>
+                    <div class="btoom">
+                      <p><i class="fa-regular fa-circle-play"></i>9</p>
+                      <p><i class="fa-regular fa-clock"></i>3h12p</p>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div> <!--  hàng 1 -->
+
+            <div class="c1"> <!--  hàng 2 -->
+              <h2>Khóa học nổi bật</h2>
+              <div class="list_khoa_hoc">
+                <div class="card_box">
+                  <div><img src="./models/img/c++_advance.jpg" class="img_card"> </div>
+                  <div class="info">
+                    <a href="#" style="font-size: 20px;">C++ nâng cao</a>
+                    <div class="btoom">
+                      <p><i class="fa-regular fa-circle-play"></i>9</p>
+                      <p><i class="fa-regular fa-clock"></i>3h12p</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card_box">
+                  <div><img src="./models/img/jsnangcao.png" class="img_card"> </div>
+                  <div class="info">
+                    <a href="#" style="font-size: 20px;">Javascript nâng cao</a>
+                    <div class="btoom">
+                      <p><i class="fa-regular fa-circle-play"></i>9</p>
+                      <p><i class="fa-regular fa-clock"></i>3h12p</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card_box">
+                  <div><img src="./models/img/github.webp" class="img_card"> </div>
+                  <div class="info">
+                    <a href="#" style="font-size: 20px;">Ứng dụng Git và GitHub</a>
+                    <div class="btoom">
+                      <p><i class="fa-regular fa-circle-play"></i>9</p>
+                      <p><i class="fa-regular fa-clock"></i>3h12p</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card_box">
+                  <div><img src="./assets/image/video-7.jpg" class="img_card"> </div>
+                  <div class="info">
+                    <a href="#" style="font-size: 20px;">Kiến thức nhập môn IT</a>
+                    <div class="btoom">
+                      <p><i class="fa-regular fa-circle-play"></i>9</p>
+                      <p><i class="fa-regular fa-clock"></i>3h12p</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card_box">
+                  <div><img src="./assets/image/video-7.jpg" class="img_card"> </div>
+                  <div class="info">
+                    <a href="#" style="font-size: 20px;">Kiến thức nhập môn IT</a>
+                    <div class="btoom">
+                      <p><i class="fa-regular fa-circle-play"></i>9</p>
+                      <p><i class="fa-regular fa-clock"></i>3h12p</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div> <!--  hàng 2 -->
+
+
+
+
+
+          </div>
         </div>
-
-        <div class="container_khoa_hoc">
-          <div class="c1"> <!--  hàng 1 -->
-            <h2>Khóa học nổi bật</h2>
-            <div class="list_khoa_hoc">
-              <div class="card_box">
-                <div><img src="./assets/image/lap_trinh_c.png" class="img_card"> </div>
-                <div class="info">
-                  <a href="./assets/php/nextpage.php" style="font-size: 20px;">Lập trình C cho người mới bắt đầu</a>
-                  <div class="btoom">
-                    <p><i class="fa-regular fa-circle-play"></i>9</p>
-                    <p><i class="fa-regular fa-clock"></i>3h12p</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card_box">
-                <div><img src="./assets/image/c++.jpg" class="img_card"> </div>
-                <div class="info">
-                  <a href="./assets/php/nextpage.php" style="font-size: 20px;">Khoá học C++ cơ bản</a>
-                  <div class="btoom">
-                    <p><i class="fa-regular fa-circle-play"></i>9</p>
-                    <p><i class="fa-regular fa-clock"></i>3h12p</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card_box">
-                <div><img src="./assets/image/video-7.jpg" class="img_card"> </div>
-                <div class="info">
-                  <a href="#" style="font-size: 20px;">Kiến thức nhập môn IT</a>
-                  <div class="btoom">
-                    <p><i class="fa-regular fa-circle-play"></i>9</p>
-                    <p><i class="fa-regular fa-clock"></i>3h12p</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card_box">
-                <div><img src="./assets/image/video-7.jpg" class="img_card"> </div>
-                <div class="info">
-                  <a href="#" style="font-size: 20px;">Kiến thức nhập môn IT</a>
-                  <div class="btoom">
-                    <p><i class="fa-regular fa-circle-play"></i>9</p>
-                    <p><i class="fa-regular fa-clock"></i>3h12p</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card_box">
-                <div><img src="./assets/image/video-7.jpg" class="img_card"> </div>
-                <div class="info">
-                  <a href="#" style="font-size: 20px;">Kiến thức nhập môn IT</a>
-                  <div class="btoom">
-                    <p><i class="fa-regular fa-circle-play"></i>9</p>
-                    <p><i class="fa-regular fa-clock"></i>3h12p</p>
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
-          </div> <!--  hàng 1 -->
-
-          <div class="c1"> <!--  hàng 2 -->
-            <h2>Khóa học nổi bật</h2>
-            <div class="list_khoa_hoc">
-              <div class="card_box">
-                <div><img src="./assets/image/video-7.jpg" class="img_card"> </div>
-                <div class="info">
-                  <a href="#" style="font-size: 20px;">Kiến thức nhập môn IT</a>
-                  <div class="btoom">
-                    <p><i class="fa-regular fa-circle-play"></i>9</p>
-                    <p><i class="fa-regular fa-clock"></i>3h12p</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card_box">
-                <div><img src="./assets/image/video-7.jpg" class="img_card"> </div>
-                <div class="info">
-                  <a href="#" style="font-size: 20px;">Kiến thức nhập môn IT</a>
-                  <div class="btoom">
-                    <p><i class="fa-regular fa-circle-play"></i>9</p>
-                    <p><i class="fa-regular fa-clock"></i>3h12p</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card_box">
-                <div><img src="./assets/image/video-7.jpg" class="img_card"> </div>
-                <div class="info">
-                  <a href="#" style="font-size: 20px;">Kiến thức nhập môn IT</a>
-                  <div class="btoom">
-                    <p><i class="fa-regular fa-circle-play"></i>9</p>
-                    <p><i class="fa-regular fa-clock"></i>3h12p</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card_box">
-                <div><img src="./assets/image/video-7.jpg" class="img_card"> </div>
-                <div class="info">
-                  <a href="#" style="font-size: 20px;">Kiến thức nhập môn IT</a>
-                  <div class="btoom">
-                    <p><i class="fa-regular fa-circle-play"></i>9</p>
-                    <p><i class="fa-regular fa-clock"></i>3h12p</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card_box">
-                <div><img src="./assets/image/video-7.jpg" class="img_card"> </div>
-                <div class="info">
-                  <a href="#" style="font-size: 20px;">Kiến thức nhập môn IT</a>
-                  <div class="btoom">
-                    <p><i class="fa-regular fa-circle-play"></i>9</p>
-                    <p><i class="fa-regular fa-clock"></i>3h12p</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div> <!--  hàng 2 -->
-
-          <div class="c1"> <!--  hàng 3 -->
-            <h2>Khóa học nổi bật</h2>
-            <div class="list_khoa_hoc">
-              <div class="card_box">
-                <div><img src="./assets/image/video-7.jpg" class="img_card"> </div>
-                <div class="info">
-                  <a href="#" style="font-size: 20px;">Kiến thức nhập môn IT</a>
-                  <div class="btoom">
-                    <p><i class="fa-regular fa-circle-play"></i>9</p>
-                    <p><i class="fa-regular fa-clock"></i>3h12p</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card_box">
-                <div><img src="./assets/image/video-7.jpg" class="img_card"> </div>
-                <div class="info">
-                  <a href="#" style="font-size: 20px;">Kiến thức nhập môn IT</a>
-                  <div class="btoom">
-                    <p><i class="fa-regular fa-circle-play"></i>9</p>
-                    <p><i class="fa-regular fa-clock"></i>3h12p</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card_box">
-                <div><img src="./assets/image/video-7.jpg" class="img_card"> </div>
-                <div class="info">
-                  <a href="#" style="font-size: 20px;">Kiến thức nhập môn IT</a>
-                  <div class="btoom">
-                    <p><i class="fa-regular fa-circle-play"></i>9</p>
-                    <p><i class="fa-regular fa-clock"></i>3h12p</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card_box">
-                <div><img src="./assets/image/video-7.jpg" class="img_card"> </div>
-                <div class="info">
-                  <a href="#" style="font-size: 20px;">Kiến thức nhập môn IT</a>
-                  <div class="btoom">
-                    <p><i class="fa-regular fa-circle-play"></i>9</p>
-                    <p><i class="fa-regular fa-clock"></i>3h12p</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card_box">
-                <div><img src="./assets/image/video-7.jpg" class="img_card"> </div>
-                <div class="info">
-                  <a href="#" style="font-size: 20px;">Kiến thức nhập môn IT</a>
-                  <div class="btoom">
-                    <p><i class="fa-regular fa-circle-play"></i>9</p>
-                    <p><i class="fa-regular fa-clock"></i>3h12p</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div> <!--  hàng 3 -->
-
-          <div class="c1"> <!--  hàng 4 -->
-            <h2>Khóa học nổi bật</h2>
-            <div class="list_khoa_hoc">
-              <div class="card_box">
-                <div><img src="./assets/image/video-7.jpg" class="img_card"> </div>
-                <div class="info">
-                  <a href="#" style="font-size: 20px;">Kiến thức nhập môn IT</a>
-                  <div class="btoom">
-                    <p><i class="fa-regular fa-circle-play"></i>9</p>
-                    <p><i class="fa-regular fa-clock"></i>3h12p</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card_box">
-                <div><img src="./assets/image/video-7.jpg" class="img_card"> </div>
-                <div class="info">
-                  <a href="#" style="font-size: 20px;">Kiến thức nhập môn IT</a>
-                  <div class="btoom">
-                    <p><i class="fa-regular fa-circle-play"></i>9</p>
-                    <p><i class="fa-regular fa-clock"></i>3h12p</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card_box">
-                <div><img src="./assets/image/video-7.jpg" class="img_card"> </div>
-                <div class="info">
-                  <a href="#" style="font-size: 20px;">Kiến thức nhập môn IT</a>
-                  <div class="btoom">
-                    <p><i class="fa-regular fa-circle-play"></i>9</p>
-                    <p><i class="fa-regular fa-clock"></i>3h12p</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card_box">
-                <div><img src="./assets/image/video-7.jpg" class="img_card"> </div>
-                <div class="info">
-                  <a href="#" style="font-size: 20px;">Kiến thức nhập môn IT</a>
-                  <div class="btoom">
-                    <p><i class="fa-regular fa-circle-play"></i>9</p>
-                    <p><i class="fa-regular fa-clock"></i>3h12p</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card_box">
-                <div><img src="./assets/image/video-7.jpg" class="img_card"> </div>
-                <div class="info">
-                  <a href="#" style="font-size: 20px;">Kiến thức nhập môn IT</a>
-                  <div class="btoom">
-                    <p><i class="fa-regular fa-circle-play"></i>9</p>
-                    <p><i class="fa-regular fa-clock"></i>3h12p</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div> <!--  hàng 4 -->
-
-
-
-        </div>
-      </div>
 
 
 
@@ -426,7 +371,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="./assets/js/index.js"></script>
   </div>
 </body>
 
