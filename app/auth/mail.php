@@ -27,24 +27,18 @@ function sendOTP($receiver, $otp_code)
         $mail->addAddress($receiver);
         $mail->CharSet = 'UTF-8';
         $mail->isHTML(true);
-        $mail->Subject = '[36Tech] Mã xác thực bảo mật (OTP)';
-
+        $mail->Subject = 'Mã xác thực OTP của bạn - 36Tech';
         $mail->Body = "
-    <div style='font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; border: 1px solid #ddd; padding: 20px; border-radius: 8px;'>
-        <h2 style='color: #0056b3; text-align: center;'>Xác thực tài khoản</h2>
-        <p>Xin chào,</p>
-        <p>Chúng tôi nhận được yêu cầu xác thực cho tài khoản <b>36Tech</b> của bạn. Vui lòng sử dụng mã OTP bên dưới để tiếp tục:</p>
-        
-        <div style='background-color: #f4f4f4; padding: 15px; text-align: center; border-radius: 5px; margin: 20px 0;'>
-            <span style='font-size: 24px; font-weight: bold; letter-spacing: 5px; color: #d9534f;'>$otp_code</span>
-        </div>
-        
-        <p>Mã này sẽ hết hạn trong vòng <b>5 phút</b>.</p>
-        <p style='color: #777; font-size: 13px;'><i>Lưu ý: Nếu bạn không thực hiện yêu cầu này, vui lòng bỏ qua email này. Tuyệt đối không chia sẻ mã OTP với bất kỳ ai.</i></p>
-        
-        <hr style='border: 0; border-top: 1px solid #eee; margin: 20px 0;'>
-        <p style='text-align: center; font-size: 12px; color: #999;'>© 2024 36Tech. All rights reserved.</p>
-    </div>";
+    <h3>Xin chào,</h3>
+    <p>Bạn đang thực hiện thao tác thay đổi mật khẩu tại hệ thống <b>36Tech</b>.</p>
+    <p>Mã xác thực (OTP) của bạn là:</p>
+    
+    <h1 style='color: #ff7a7aff; margin: 10px 0;'>$otp_code</h1>
+    
+    <p>Mã này có hiệu lực trong 5 phút. Vui lòng nhập mã ngay để hoàn tất quá trình.</p>
+    <br>
+    <p>Trân trọng,<br>Đội ngũ Hỗ trợ 36Tech</p>
+";
         return $mail->send();
     } catch (Exception $e) {
         return false;

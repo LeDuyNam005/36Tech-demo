@@ -72,7 +72,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             if ($uploadOk == 1) {
                 if (move_uploaded_file($_FILES["avatar"]["tmp_name"], $target_file)) {
                     // Lưu tên file mới để update vào DB
-                    // Dùng basename để chỉ lấy tên file (vd: hinh.jpg) thay vì cả đường dẫn dài
                     $avatar_db = basename($_FILES["avatar"]["name"]);
 
                     // Cập nhật lại Session để hiển thị ngay trên Header
