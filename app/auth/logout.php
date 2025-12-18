@@ -73,7 +73,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirm'])) {
 
     <div class="logout-box">
         <h3>Bạn có chắc chắn muốn đăng xuất?</h3>
-        <p>Phiên làm việc hiện tại của bạn sẽ kết thúc.</p>
 
         <form method="POST">
             <div class="btn-group">

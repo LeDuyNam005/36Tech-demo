@@ -1,7 +1,6 @@
 <?php
 require_once 'connect.php';
 require_once 'auth.php';
-
 requireLogin();
 
 $mess = '';
@@ -41,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $avatar_db = $user['avatar']; // (avatar cũ)
 
         if (isset($_FILES['avatar']) && $_FILES['avatar']['size'] > 0) {
-            $target_dir = "../../public/assets/image/";
+            $target_dir = '../../public/assets/image/';
             $target_file = $target_dir . basename($_FILES["avatar"]["name"]);
             $uploadOk = 1;
             $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
@@ -77,7 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     // Cập nhật lại Session để hiển thị ngay trên Header
                     $_SESSION['avatar'] = $avatar_db;
                 } else {
-                    $mess .= "Lỗi khi tải file lên";
+                    $mess .= "Lỗi khi tải file lên ! <br>";
                 }
             }
         }
@@ -106,9 +105,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hồ sơ cá nhân</title>
-    <link rel="stylesheet" href="./css/login-module.css">
+    <link rel="stylesheet" href="<?= AUTH ?>/auth/css/login-module.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="<?= AUTH ?>/auth/css/profile.css">
     <style>
 
     </style>
@@ -126,9 +125,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <?php
                 // Xử lý hiển thị ảnh
                 $avt = !empty($user['avatar']) ? $user['avatar'] : 'default-avatar.jpg';
-                $displayPath = "../../public/assets/image/" . $avt;
                 ?>
-                <img src="<?= $displayPath ?>" class="avatar-img" id="avatar-preview">
+                <img src="<?= IMG . $avt ?>" class="avatar-img" id="avatar-preview">
 
                 <label for="file-input" class="btn-upload-icon">
                     <i class="fa-solid fa-camera"></i>

@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'connect.php'; // Đảm bảo file này đã define('ASSETS', '...');
+require 'connect.php';
 require_once 'mail.php';
 
 $error = '';
