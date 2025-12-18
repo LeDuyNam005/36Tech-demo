@@ -3,7 +3,6 @@
 require_once __DIR__ . '/../app/auth/auth.php';
 // Nhúng file config để lấy BASE_URL
 require_once __DIR__ . '/config.php';
-
 requireLogin();
 ?>
 

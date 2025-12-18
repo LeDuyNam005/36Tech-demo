@@ -87,7 +87,6 @@ requireLogin();
             <h3>DevOps & Infra</h3>
             <p>Quản lý hạ tầng, CI/CD, Docker, Kubernetes để vận hành hệ thống trơn tru.</p>
           </div>
-
         </div>
       </div>
     </main>
