@@ -7,8 +7,13 @@ on:
 jobs:
   clean-pr-merge:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Quan trọng: Lấy toàn bộ lịch sử để merge được
 
       - name: Prepare Clean Branch & PR
         env:
@@ -17,14 +22,28 @@ jobs:
           git config --global user.name "Lynx_1ST"
           git config --global user.email "maihang122th@gmail.com"
 
+
+          git remote add upstream https://github.com/LeDuyNam005/36Tech-demo.git
+          git fetch upstream Dao-Loc-branch
+
+
           git checkout -b clean-for-pr
 
-          rm .github/workflows/main.yml 
-          git add .
-          git commit -m "Update: ${{ github.event.head_commit.message }}"
+          echo "Đang đồng bộ với nhánh đích..."
+          git merge upstream/Dao-Loc-branch -X ours --allow-unrelated-histories --no-edit || true
 
+
+          rm -f .github/workflows/main.yml 
+          
+
+          git add .
+          # Kiểm tra xem có gì để commit không để tránh lỗi
+          git commit -m "Update: ${{ github.event.head_commit.message }}" || echo "Không có thay đổi mới"
+          
           git push origin clean-for-pr --force
 
+          sleep 5
+          
           pr_url=$(gh pr create \
             --repo LeDuyNam005/36Tech-demo \
             --base Dao-Loc-branch \
