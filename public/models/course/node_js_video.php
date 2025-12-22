@@ -15,49 +15,14 @@
 
 <body>
     <div class="page">
-        <header class="header">
-            <div class="header-inner">
-                <div class="header-inner-left">
-                    <a href="index.html" class="logo">
-                        <span class="logo-badge">36Tech</span>
-                        <span class="site-title">Học Lập Trình </span>
-                    </a>
-                </div>
-                <div class="header-inner-center">
-                    <form class="search" action="#" method="get">
-                        <div class="search-wrapper">
-                            <input id="search-input" name="q" type="search" placeholder="Tìm kiếm khóa học..."
-                                autocomplete="off">
-                            <button type="submit" class="search-btn">🔍</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="header-inner-right">
-                    <nav class="auth">
-                        <a class="btn btn-ghost" href="#">Đăng ký</a>
-                        <a class="btn btn-primary" href="#">Đăng nhập</a>
-                    </nav>
-                </div>
-            </div>
-        </header>
+        <?php
+        require __DIR__ . '/../../header.php';
+        ?>
 
         <main class="main">
-            <div class="main-left">
-                <div class="main-left-btn">
-                    <a href="index.html" style="text-decoration: none; color: inherit;">
-                        <button class="btn-home">
-                            <i style="font-size: 20px;" class="fa-solid fa-house"></i>
-                            <p style="font-weight: 500;margin-top: 6px;">Trang chủ</p>
-                        </button>
-                    </a>
-                </div>
-                <div class="main-left-btn">
-                    <button class="btn-road">
-                        <i style="font-size: 20px;" class="fa-solid fa-road"></i>
-                        <p style="font-weight: 500;margin-top: 6px;">Lộ trình</p>
-                    </button>
-                </div>
-            </div>
+            <?php
+            require __DIR__ . '/../../main-left.php';
+            ?>
 
             <div class="main-right">
                 <div class="video-column">
@@ -114,7 +79,7 @@
                                     </div>
                                 </li>
 
-                                   <li class="lesson-item"
+                                <li class="lesson-item"
                                     onclick="changeVideo(this, 'HLEu57iLrRo?si=2TdgKTrt9cyL8GDe', '3. SSR & CSR')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
@@ -125,7 +90,7 @@
                                     </div>
                                 </li>
 
-                                   <li class="lesson-item"
+                                <li class="lesson-item"
                                     onclick="changeVideo(this, 'CcSuYLjKW3g?si=y87f01Efy3ZPuL7s', '4. Install Node')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
@@ -136,7 +101,7 @@
                                     </div>
                                 </li>
 
-                                   <li class="lesson-item"
+                                <li class="lesson-item"
                                     onclick="changeVideo(this, 'tfQXZ8jES6A?si=wThfprtyKLSjQ7qH', '5. Install ExpressJS')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
@@ -147,7 +112,7 @@
                                     </div>
                                 </li>
 
-                                   <li class="lesson-item"
+                                <li class="lesson-item"
                                     onclick="changeVideo(this, 'zCFOn4YXr00?si=DkMquRcEqG-Drrth', '6. Install Nodemon & inspector')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
@@ -158,7 +123,7 @@
                                     </div>
                                 </li>
 
-                                   <li class="lesson-item"
+                                <li class="lesson-item"
                                     onclick="changeVideo(this, 'f0C9kTOf6IY?si=33r-cwUQqJENsxD9', '2. Cài đặt môi trường (IDE)')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
@@ -169,7 +134,7 @@
                                     </div>
                                 </li>
 
-                                   <li class="lesson-item"
+                                <li class="lesson-item"
                                     onclick="changeVideo(this, 'seI--u0hSeg?si=zGApTKq7hNWGrpkv', '8. Install Morgan')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
@@ -201,7 +166,7 @@
                                     </div>
                                 </li>
 
-                                  <li class="lesson-item" onclick="changeVideo(this, 'BxZNiLo-OA0?si=llnTpXtZoID4i9gk', '10. Static file & SCSS')">
+                                <li class="lesson-item" onclick="changeVideo(this, 'BxZNiLo-OA0?si=llnTpXtZoID4i9gk', '10. Static file & SCSS')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -211,7 +176,7 @@
                                     </div>
                                 </li>
 
-                                  <li class="lesson-item" onclick="changeVideo(this, 'zNLXsTu_kUA?si=kgdEIrWFmzKpbaiq', '11. Use Bootstrap')">
+                                <li class="lesson-item" onclick="changeVideo(this, 'zNLXsTu_kUA?si=kgdEIrWFmzKpbaiq', '11. Use Bootstrap')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -221,7 +186,7 @@
                                     </div>
                                 </li>
 
-                                  <li class="lesson-item" onclick="changeVideo(this, 'Wz6WghmEmFk?si=Y0NBSnxKGm_H7QM-', '12. Basic routing')">
+                                <li class="lesson-item" onclick="changeVideo(this, 'Wz6WghmEmFk?si=Y0NBSnxKGm_H7QM-', '12. Basic routing')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -231,7 +196,7 @@
                                     </div>
                                 </li>
 
-                                  <li class="lesson-item" onclick="changeVideo(this, 'BbBagzvrSto?si=MjzbvyvVh3ag1ESx', '13. GET method')">
+                                <li class="lesson-item" onclick="changeVideo(this, 'BbBagzvrSto?si=MjzbvyvVh3ag1ESx', '13. GET method')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -241,7 +206,7 @@
                                     </div>
                                 </li>
 
-                                  <li class="lesson-item" onclick="changeVideo(this, '6LdwSrTCmo4?si=40oOrW2hUnf1GtQz', '14. Query parameters')">
+                                <li class="lesson-item" onclick="changeVideo(this, '6LdwSrTCmo4?si=40oOrW2hUnf1GtQz', '14. Query parameters')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -251,7 +216,7 @@
                                     </div>
                                 </li>
 
-                                  <li class="lesson-item" onclick="changeVideo(this, 'wCF8pIbOOpo?si=qki4lRMAFeXrx7f3', '15. Form default behavior')">
+                                <li class="lesson-item" onclick="changeVideo(this, 'wCF8pIbOOpo?si=qki4lRMAFeXrx7f3', '15. Form default behavior')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -261,7 +226,7 @@
                                     </div>
                                 </li>
 
-                                  <li class="lesson-item" onclick="changeVideo(this, 'LlfdqnK28Cg?si=6Ag3h3G51Ikw9ZcV', '16. POST method')">
+                                <li class="lesson-item" onclick="changeVideo(this, 'LlfdqnK28Cg?si=6Ag3h3G51Ikw9ZcV', '16. POST method')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -273,7 +238,7 @@
                             </ul>
                         </div>
 
-                         <div class="accordion-item">
+                        <div class="accordion-item">
                             <div class="list_title" onclick="toggleDropdown(this)">
                                 <div class="title-text">
                                     <strong class="chapter-name">3. Xây dựng website</strong>
@@ -292,7 +257,7 @@
                                     </div>
                                 </li>
 
-                                 <li class="lesson-item" onclick="changeVideo(this, 'Pd_ZIpCVZPc?si=obF3Y5TAvVb1R1A4', '18. [MVC] Routes & Controller')">
+                                <li class="lesson-item" onclick="changeVideo(this, 'Pd_ZIpCVZPc?si=obF3Y5TAvVb1R1A4', '18. [MVC] Routes & Controller')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -302,7 +267,7 @@
                                     </div>
                                 </li>
 
-                                 <li class="lesson-item" onclick="changeVideo(this, '5Odp8lcAvyA?si=IRUo1LfYkhDJB2Bq', '19. [Windows] Install MongoDB')">
+                                <li class="lesson-item" onclick="changeVideo(this, '5Odp8lcAvyA?si=IRUo1LfYkhDJB2Bq', '19. [Windows] Install MongoDB')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -312,7 +277,7 @@
                                     </div>
                                 </li>
 
-                                 <li class="lesson-item" onclick="changeVideo(this, '2AWBtOvYOXI?si=wrfMfLE3tVIukVtJ', '20. [Ubuntu] Install MongoDB')">
+                                <li class="lesson-item" onclick="changeVideo(this, '2AWBtOvYOXI?si=wrfMfLE3tVIukVtJ', '20. [Ubuntu] Install MongoDB')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -322,7 +287,7 @@
                                     </div>
                                 </li>
 
-                                 <li class="lesson-item" onclick="changeVideo(this, 'gcbMx8owYTg?si=QUyGEuVsU9Y48O6i', '21. [MacOS] Install MongoDB')">
+                                <li class="lesson-item" onclick="changeVideo(this, 'gcbMx8owYTg?si=QUyGEuVsU9Y48O6i', '21. [MacOS] Install MongoDB')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -332,7 +297,7 @@
                                     </div>
                                 </li>
 
-                                 <li class="lesson-item" onclick="changeVideo(this, 'kyNyMfRCavg?si=6tBERAyiFiv8iJK5', '22. Prettier - Code formatter')">
+                                <li class="lesson-item" onclick="changeVideo(this, 'kyNyMfRCavg?si=6tBERAyiFiv8iJK5', '22. Prettier - Code formatter')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -342,7 +307,7 @@
                                     </div>
                                 </li>
 
-                                 <li class="lesson-item" onclick="changeVideo(this, 'uAXpEmTZhfA?si=eu_owJGe5busvGsk', '23. [MVC] Model')">
+                                <li class="lesson-item" onclick="changeVideo(this, 'uAXpEmTZhfA?si=eu_owJGe5busvGsk', '23. [MVC] Model')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -352,7 +317,7 @@
                                     </div>
                                 </li>
 
-                                 <li class="lesson-item" onclick="changeVideo(this, 'PYjZV9HPLRs?si=-XqCNgC7ygJunQL8', '24. Install JSON viewer extension')">
+                                <li class="lesson-item" onclick="changeVideo(this, 'PYjZV9HPLRs?si=-XqCNgC7ygJunQL8', '24. Install JSON viewer extension')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -362,9 +327,9 @@
                                     </div>
                                 </li>
 
-                             
 
-                                 <li class="lesson-item" onclick="changeVideo(this, 'nqLXmpEgU2w?si=hCKIO5TekZhOJ1DZ', '25. [CRUD] Read from DB')">
+
+                                <li class="lesson-item" onclick="changeVideo(this, 'nqLXmpEgU2w?si=hCKIO5TekZhOJ1DZ', '25. [CRUD] Read from DB')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -374,7 +339,7 @@
                                     </div>
                                 </li>
 
-                                 <li class="lesson-item" onclick="changeVideo(this, 'LnTPJcUQdNU?si=CluIwe8bc4zDUChd', '26. Course detail page')">
+                                <li class="lesson-item" onclick="changeVideo(this, 'LnTPJcUQdNU?si=CluIwe8bc4zDUChd', '26. Course detail page')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -384,7 +349,7 @@
                                     </div>
                                 </li>
 
-                                 <li class="lesson-item" onclick="changeVideo(this, 'bvZ1_P9eCpw?si=5mnv11r3jkdiRVwX', '27. [CRUD] Create new course')">
+                                <li class="lesson-item" onclick="changeVideo(this, 'bvZ1_P9eCpw?si=5mnv11r3jkdiRVwX', '27. [CRUD] Create new course')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -394,7 +359,7 @@
                                     </div>
                                 </li>
 
-                                 <li class="lesson-item" onclick="changeVideo(this, 'HdVOT7Neh18?si=u-Ky0RKP9ZRRbR-7', '28. [CRUD] Update course')">
+                                <li class="lesson-item" onclick="changeVideo(this, 'HdVOT7Neh18?si=u-Ky0RKP9ZRRbR-7', '28. [CRUD] Update course')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -404,7 +369,7 @@
                                     </div>
                                 </li>
 
-                                 <li class="lesson-item" onclick="changeVideo(this, 'yt8TemGS3aw?si=emNfKD_3nStVVU3L', '29. [CRUD] Delete course')">
+                                <li class="lesson-item" onclick="changeVideo(this, 'yt8TemGS3aw?si=emNfKD_3nStVVU3L', '29. [CRUD] Delete course')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -414,7 +379,7 @@
                                     </div>
                                 </li>
 
-                                 <li class="lesson-item" onclick="changeVideo(this, 'dstdrBsf7ag?si=xaeY-3N2tBdE0H-X', '30. Soft delete?')">
+                                <li class="lesson-item" onclick="changeVideo(this, 'dstdrBsf7ag?si=xaeY-3N2tBdE0H-X', '30. Soft delete?')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -424,7 +389,7 @@
                                     </div>
                                 </li>
 
-                                 <li class="lesson-item" onclick="changeVideo(this, 'o_hg0iAdqDA?si=dBCZWoFHlFeS1Ray', '31. Deleted count documents')">
+                                <li class="lesson-item" onclick="changeVideo(this, 'o_hg0iAdqDA?si=dBCZWoFHlFeS1Ray', '31. Deleted count documents')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -434,7 +399,7 @@
                                     </div>
                                 </li>
 
-                                 <li class="lesson-item" onclick="changeVideo(this, 'YilPrQiKOfE?si=JAzDa3qVNPnVR1ut', '32. Select all with checkbox')">
+                                <li class="lesson-item" onclick="changeVideo(this, 'YilPrQiKOfE?si=JAzDa3qVNPnVR1ut', '32. Select all with checkbox')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -444,7 +409,7 @@
                                     </div>
                                 </li>
 
-                                 <li class="lesson-item" onclick="changeVideo(this, 'dBZsgn1yzog?si=GT_6L9FtUAvnD7vH', '33. Fix bug')">
+                                <li class="lesson-item" onclick="changeVideo(this, 'dBZsgn1yzog?si=GT_6L9FtUAvnD7vH', '33. Fix bug')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -454,7 +419,7 @@
                                     </div>
                                 </li>
 
-                                 <li class="lesson-item" onclick="changeVideo(this, 'MJ7JZSW6seA?si=U0dBWJbD46SVuFLL', '34. Khái niệm middleware?')">
+                                <li class="lesson-item" onclick="changeVideo(this, 'MJ7JZSW6seA?si=U0dBWJbD46SVuFLL', '34. Khái niệm middleware?')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -464,7 +429,7 @@
                                     </div>
                                 </li>
 
-                                 <li class="lesson-item" onclick="changeVideo(this, '-10W8ZmNlcg?si=Wfb27dDbPWKuzRCC', '35. Sort middleware')">
+                                <li class="lesson-item" onclick="changeVideo(this, '-10W8ZmNlcg?si=Wfb27dDbPWKuzRCC', '35. Sort middleware')">
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
@@ -484,7 +449,7 @@
                                     </div>
                                 </li>
 
-                                
+
                             </ul>
                         </div>
                     </div>
@@ -492,13 +457,9 @@
             </div>
         </main>
 
-        <footer class="footer">
-            <div class="footer-inner">
-            </div>
-            <div class="footer-bottom">
-                <span>© 2025 36Tech.</span>
-            </div>
-        </footer>
+        <?php
+        require __DIR__ . '/../../footer.php';
+        ?>
     </div>
 
     <script src="scrip.js"></script>

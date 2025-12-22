@@ -7,7 +7,7 @@
     <title>Chi tiết khóa học ReactJS</title>
 
     <link rel="stylesheet" href="../../assets/css/index.css">
-    <link rel="stylesheet" href="style_video.css"> 
+    <link rel="stylesheet" href="style_video.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -15,49 +15,13 @@
 
 <body>
     <div class="page">
-        <header class="header">
-            <div class="header-inner">
-                <div class="header-inner-left">
-                    <a href="index.html" class="logo">
-                        <span class="logo-badge">36Tech</span>
-                        <span class="site-title">Học Lập Trình </span>
-                    </a>
-                </div>
-                <div class="header-inner-center">
-                    <form class="search" action="#" method="get">
-                        <div class="search-wrapper">
-                            <input id="search-input" name="q" type="search" placeholder="Tìm kiếm khóa học..."
-                                autocomplete="off">
-                            <button type="submit" class="search-btn">🔍</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="header-inner-right">
-                    <nav class="auth">
-                        <a class="btn btn-ghost" href="#">Đăng ký</a>
-                        <a class="btn btn-primary" href="#">Đăng nhập</a>
-                    </nav>
-                </div>
-            </div>
-        </header>
-
+        <?php
+        require __DIR__ . '/../../header.php';
+        ?>
         <main class="main">
-            <div class="main-left">
-                <div class="main-left-btn">
-                    <a href="index.html" style="text-decoration: none; color: inherit;">
-                        <button class="btn-home">
-                            <i style="font-size: 20px;" class="fa-solid fa-house"></i>
-                            <p style="font-weight: 500;margin-top: 6px;">Trang chủ</p>
-                        </button>
-                    </a>
-                </div>
-                <div class="main-left-btn">
-                    <button class="btn-road">
-                        <i style="font-size: 20px;" class="fa-solid fa-road"></i>
-                        <p style="font-weight: 500;margin-top: 6px;">Lộ trình</p>
-                    </button>
-                </div>
-            </div>
+            <?php
+            require __DIR__ . '/../../main-left.php';
+            ?>
 
             <div class="main-right">
                 <div class="video-column">
@@ -82,18 +46,18 @@
                     </div>
 
                     <div class="curriculum-list scroll-bar">
-                        
+
                         <div class="accordion-item">
                             <div class="list_title active-chapter" onclick="toggleDropdown(this)">
                                 <div class="title-text">
                                     <strong class="chapter-name">1. Giới thiệu</strong>
-                                    <span class="lesson-count">0/2 | 33:01</span> 
+                                    <span class="lesson-count">0/2 | 33:01</span>
                                 </div>
                                 <i class="fa-solid fa-chevron-down icon-toggle"></i>
                             </div>
                             <ul class="dropdown" style="display: block;">
 
-                                <li class="lesson-item active" 
+                                <li class="lesson-item active"
                                     onclick="changeVideo(this, 'x0fSBAgBrOQ', '1. ReactJS là gì? Tại sao nên học ReactJS?')">
                                     <div class="lesson-info">
                                         <i class="fa-solid fa-circle-play status-icon"></i>
@@ -173,7 +137,7 @@
                                 </li>
                             </ul>
                         </div>
-                        
+
                         <div class="accordion-item">
                             <div class="list_title" onclick="toggleDropdown(this)">
                                 <div class="title-text">
@@ -314,7 +278,7 @@
                                 </li>
                             </ul>
                         </div>
-                        
+
                         <div class="accordion-item">
                             <div class="list_title" onclick="toggleDropdown(this)">
                                 <div class="title-text">
@@ -389,7 +353,7 @@
                                 </li>
                             </ul>
                         </div>
-                        
+
                         <div class="accordion-item">
                             <div class="list_title" onclick="toggleDropdown(this)">
                                 <div class="title-text">
@@ -647,7 +611,7 @@
                                 </li>
                             </ul>
                         </div>
-                        
+
                         <div class="accordion-item">
                             <div class="list_title" onclick="toggleDropdown(this)">
                                 <div class="title-text">
@@ -743,7 +707,7 @@
                                 </li>
                             </ul>
                         </div>
-                        
+
                         <div class="accordion-item">
                             <div class="list_title" onclick="toggleDropdown(this)">
                                 <div class="title-text">
@@ -926,7 +890,7 @@
                                 </li>
                             </ul>
                         </div>
-                        
+
                         <div class="accordion-item">
                             <div class="list_title" onclick="toggleDropdown(this)">
                                 <div class="title-text">
@@ -991,13 +955,9 @@
             </div>
         </main>
 
-        <footer class="footer">
-            <div class="footer-inner">
-            </div>
-            <div class="footer-bottom">
-                <span>© 2025 36Tech.</span>
-            </div>
-        </footer>
+        <?php
+        require __DIR__ . '/../../footer.php';
+        ?>
     </div>
 
     <script src="scrip.js"></script>

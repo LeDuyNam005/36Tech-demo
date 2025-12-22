@@ -20,57 +20,22 @@
 <body>
     <div class="page">
 
-        <header class="header">
-            <div class="header-inner">
-                <div class="header-inner-left">
-                    <a href="index.html" class="logo" aria-label="F8 - Home">
-                        <span class="logo-badge">36Tech</span>
-                        <span class="site-title">Học Lập Trình </span>
-                    </a>
-                </div>
-                <div class="header-inner-center">
-                    <form class="search" role="search" action="#" method="get">
-                        <div class="search-wrapper">
-                            <input id="search-input" name="q" type="search" placeholder="Tìm kiếm khóa học..."
-                                autocomplete="off">
-                            <button type="submit" class="search-btn">🔍</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="header-inner-right">
-                    <nav class="auth">
-                        <a class="btn btn-ghost" href="#">Đăng ký</a>
-                        <a class="btn btn-primary" href="#">Đăng nhập</a>
-                    </nav>
-                </div>
-            </div>
-        </header>
+        <?php
+        require __DIR__ . '/../../header.php';
+        ?>
 
         <main class="main">
 
-            <div class="main-left">
-                <div class="main-left-btn">
-                    <a href="index.html" style="text-decoration: none; color: inherit;">
-                        <button class="btn-home">
-                            <i style="font-size: 20px;" class="fa-solid fa-house"></i>
-                            <p style="font-weight: 500;margin-top: 6px;">Trang chủ</p>
-                        </button>
-                    </a>
-                </div>
-                <div class="main-left-btn">
-                    <button class="btn-road">
-                        <i style="font-size: 20px;" class="fa-solid fa-road"></i>
-                        <p style="font-weight: 500;margin-top: 6px;">Lộ trình</p>
-                    </button>
-                </div>
-            </div>
+            <?php
+            require __DIR__ . '/../../main-left.php';
+            ?>
 
             <div class="main-right">
 
                 <div class="container_content_inside_card">
                     <div class="left_content_inside">
                         <div class="course-header">
-                            <h1>Lập trình C++ nâng cao</h1>
+                            <h1>Lập trình C++ cho người mới bắt đầu</h1>
                             <p class="course-desc">Khóa học cung cấp kiến thức nền tảng vững chắc, giúp bạn tư duy logic
                                 và sẵn sàng cho con đường lập trình chuyên nghiệp.</p>
                         </div>
@@ -154,7 +119,7 @@
                     <div class="right_content_wrapper">
                         <div class="course-card">
                             <div class="course-img-wrapper">
-                                <img src="../img/c++_advance.jpg" alt="Khóa học C++ nâng cao">
+                                <img src="../img/c++.jpg" alt="Khóa học C++">
                                 <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
                             </div>
 
@@ -176,63 +141,9 @@
             </div>
         </main>
 
-        <footer class="footer">
-            <div class="footer-inner">
-                <div class="footer-col contact">
-                    <a href="/" class="logo" aria-label="36Tech - Home">
-                        <img style="border-radius: 10px;" src="../../assets/image/logo36Tech.png" alt="" width="50px"
-                            height="50px">
-
-                    </a>
-                    <p>Điện thoại: 09 6148 0702<br>
-                        Email: contact@36Tech.edu.vn<br>
-                        Địa chỉ: Số 18, phố Viên, Đức Thắng, Bắc Từ Liêm, Hà Nội</p>
-                    <img src="../../assets/image/DCMA.png" alt="DMCA Protected"
-                        style="width:120px; margin-top:12px; display:block">
-                </div>
-
-                <div class="footer-col">
-                    <h4>VỀ 36Tech</h4>
-                    <ul>
-                        <li><a href="#">Giới thiệu</a></li>
-                        <li><a href="#">Liên hệ</a></li>
-                        <li><a href="#">Điều khoản</a></li>
-                        <li><a href="#">Bảo mật</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>SẢN PHẨM</h4>
-                    <ul>
-                        <li><a href="#">Khóa học CSS</a></li>
-                        <li><a href="#">Khóa học javascript</a></li>
-                        <li><a href="#">Khóa học nhập môn cntt </a></li>
-                        <li><a href="#">Khóa học C++</a></li>
-                        <li><a href="#">Khóa học Java</a></li>
-                        <li><a href="#">Khóa học python</a></li>
-                    </ul>
-                </div>
-
-
-
-                <div class="footer-col">
-                    <h4>CÔNG TY CỔ PHẦN CÔNG NGHỆ GIÁO DỤC F8</h4>
-                    <ul>
-                        <li><strong>Mã số thuế:</strong> 0000000000</li>
-                        <li><strong>Ngày thành lập:</strong> 01/09/2025</li>
-                        <li><strong>Lĩnh vực hoạt động:</strong> Giáo dục, công nghệ - lập trình.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <span>© 2025 36Tech. Nền tảng học lập trình hàng đầu Việt Nam</span>
-                <div class="social" style="display:flex; gap:12px">
-                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-                </div>
-            </div>
-        </footer>
+        <?php
+        require __DIR__ . '/../../footer.php';
+        ?>
 
     </div>
 

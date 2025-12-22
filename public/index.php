@@ -116,7 +116,7 @@
                                 <div class="card_box">
                                     <div><img src="./models/img/lap_trinh_c.png" class="img_card"> </div>
                                     <div class="info">
-                                        <a href="./assets/php/nextpage.php" style="font-size: 20px;">Lập trình C cho người mới bắt đầu</a>
+                                        <a href="index.php?page_layout=C" style="font-size: 20px;">Lập trình C cho người mới bắt đầu</a>
                                         <div class="btoom">
                                             <p><i class="fa-regular fa-circle-play"></i>9</p>
                                             <p><i class="fa-regular fa-clock"></i>3h12p</p>

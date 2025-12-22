@@ -20,51 +20,15 @@
 <body>
     <div class="page">
 
-        <header class="header">
-            <div class="header-inner">
-                <div class="header-inner-left">
-                    <a href="index.html" class="logo" aria-label="F8 - Home">
-                        <span class="logo-badge">36Tech</span>
-                        <span class="site-title">Học Lập Trình </span>
-                    </a>
-                </div>
-                <div class="header-inner-center">
-                    <form class="search" role="search" action="#" method="get">
-                        <div class="search-wrapper">
-                            <input id="search-input" name="q" type="search" placeholder="Tìm kiếm khóa học..."
-                                autocomplete="off">
-                            <button type="submit" class="search-btn">🔍</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="header-inner-right">
-                    <nav class="auth">
-                        <a class="btn btn-ghost" href="#">Đăng ký</a>
-                        <a class="btn btn-primary" href="#">Đăng nhập</a>
-                    </nav>
-                </div>
-            </div>
-        </header>
+        <?php
+        require __DIR__ . '/../../header.php';
+        ?>
 
         <main class="main">
 
-            <div class="main-left">
-                <div class="main-left-btn">
-                    <a href="index.html" style="text-decoration: none; color: inherit;">
-                        <button class="btn-home">
-                            <i style="font-size: 20px;" class="fa-solid fa-house"></i>
-                            <p style="font-weight: 500;margin-top: 6px;">Trang chủ</p>
-                        </button>
-                    </a>
-                </div>
-                <div class="main-left-btn">
-                    <button class="btn-road">
-                        <i style="font-size: 20px;" class="fa-solid fa-road"></i>
-                        <p style="font-weight: 500;margin-top: 6px;">Lộ trình</p>
-                    </button>
-                </div>
-            </div>
-
+            <?php
+            require __DIR__ . '/../../main-left.php';
+            ?>
             <div class="main-right">
 
                 <div class="container_content_inside_card">
@@ -132,7 +96,7 @@
                                         <li><span><i class="fa-regular fa-circle-play"></i> 6. Thuật ngữ Built-in là gì?</span><span class="time">07:47</span></li>
                                     </ul>
                                 </div>
-                                
+
                                 <div class="accordion-item">
                                     <div class="list_title" onclick="toggleDropdown(this)">
                                         <div class="title-text">
@@ -156,7 +120,7 @@
                                         <li><span><i class="fa-regular fa-circle-play"></i> 18. Toán tử logical và câu lệnh điều kiện If</span><span class="time">13:13</span></li>
                                     </ul>
                                 </div>
-                                
+
                                 <div class="accordion-item">
                                     <div class="list_title" onclick="toggleDropdown(this)">
                                         <div class="title-text">
@@ -443,7 +407,7 @@
                                         <li><span><i class="fa-regular fa-circle-play"></i> 112. Polyfill là gì? Khi nào cần sử dụng?</span><span class="time">07:21</span></li>
                                     </ul>
                                 </div>
-                                
+
                             </div>
                         </div>
 
@@ -483,85 +447,12 @@
             </div>
         </main>
 
-        <footer class="footer">
-            <div class="footer-inner">
-                <div class="footer-col contact">
-                    <a href="/" class="logo" aria-label="36Tech - Home">
-                        <img style="border-radius: 10px;" src="../../assets/img/logo36Tech.png" alt="" width="50px"
-                            height="50px">
 
-                    </a>
-                    <p>Điện thoại: 09 6148 0702<br>
-                        Email: contact@36Tech.edu.vn<br>
-                        Địa chỉ: Số 18, phố Viên, Đức Thắng, Bắc Từ Liêm, Hà Nội</p>
-                    <img src="../../assets/img/DCMA.png" alt="DMCA Protected"
-                        style="width:120px; margin-top:12px; display:block">
-                </div>
-
-                <div class="footer-col">
-                    <h4>VỀ 36Tech</h4>
-                    <ul>
-                        <li><a href="#">Giới thiệu</a></li>
-                        <li><a href="#">Liên hệ</a></li>
-                        <li><a href="#">Điều khoản</a></li>
-                        <li><a href="#">Bảo mật</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>SẢN PHẨM</h4>
-                    <ul>
-                        <li><a href="#">Khóa học CSS</a></li>
-                        <li><a href="#">Khóa học javascript</a></li>
-                        <li><a href="#">Khóa học nhập môn cntt </a></li>
-                        <li><a href="#">Khóa học C++</a></li>
-                        <li><a href="#">Khóa học Java</a></li>
-                        <li><a href="#">Khóa học python</a></li>
-                    </ul>
-                </div>
-
-
-
-                <div class="footer-col">
-                    <h4>CÔNG TY CỔ PHẦN CÔNG NGHỆ GIÁO DỤC F8</h4>
-                    <ul>
-                        <li><strong>Mã số thuế:</strong> 0000000000</li>
-                        <li><strong>Ngày thành lập:</strong> 01/09/2025</li>
-                        <li><strong>Lĩnh vực hoạt động:</strong> Giáo dục, công nghệ - lập trình.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <span>© 2025 36Tech. Nền tảng học lập trình hàng đầu Việt Nam</span>
-                <div class="social" style="display:flex; gap:12px">
-                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-                </div>
-            </div>
-        </footer>
-
-            <h3>Yêu cầu</h3>
-            <ul class="list_gt">
-                <li>Máy vi tính kết nối internet (Windows, Ubuntu hoặc MacOS)</li>
-                <li>Ý thức tự học cao, trách nhiệm cao, kiên trì bền bỉ không ngại cái khó</li>
-                <li>Không được nóng vội, bình tĩnh học, làm bài tập sau mỗi bài học</li>
-                <li>Bạn không cần biết gì hơn nữa, trong khóa học tôi sẽ chỉ cho bạn những gì bạn cần phải biết</li>
-            </ul>
-        </div>
-        <div class="right_content_inside">
-            <img src="/test/img/jscoban.jpg" alt="">
-            <button class="btn_right_content_inside">Xem Ngay</button>
-
-            <ul class="right_list">
-                <li><i class="fa-solid fa-gauge-high"></i> Trình độ cơ bản //</li>
-                <li><i class="fa-solid fa-film"></i> Tổng số 107 bài học</li>
-                <li><i class="fa-solid fa-clock"></i> Thời lượng 23 giờ 52 phút</li>
-                <li><i class="fa-solid fa-battery-full"></i> Học mọi lúc, mọi nơi</li>
-            </ul>
-
-        </div>
+        <?php
+        require __DIR__ . '/../../footer.php';
+        ?>
     </div>
+
 
     <script src="dropdown.js"></script>
 </body>
