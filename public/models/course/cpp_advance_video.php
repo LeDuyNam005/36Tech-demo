@@ -86,7 +86,7 @@
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
-                                            <span class="lesson-name">1. Nạp chồng toán tử trong C++ | Operator overLoading</span>
+                                            <span class="lesson-name">2. Nạp chồng toán tử trong C++ | Operator overLoading</span>
                                             <span class="lesson-time"><i class="fa-regular fa-clock"></i> 11:31</span>
                                         </div>
                                     </div>
@@ -107,7 +107,7 @@
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
-                                            <span class="lesson-name">1. Class & object | Lớp và đối tượng trong C++</span>
+                                            <span class="lesson-name">3. Class & object | Lớp và đối tượng trong C++</span>
                                             <span class="lesson-time"><i class="fa-regular fa-clock"></i> 15:50</span>
                                         </div>
                                     </div>
@@ -116,7 +116,7 @@
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
-                                            <span class="lesson-name">2. Các hàm thành phần của class</span>
+                                            <span class="lesson-name">4. Các hàm thành phần của class</span>
                                             <span class="lesson-time"><i class="fa-regular fa-clock"></i> 8:31</span>
                                         </div>
                                     </div>
@@ -136,7 +136,7 @@
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
-                                            <span class="lesson-name">1. Các thành phần public</span>
+                                            <span class="lesson-name">5. Các thành phần public</span>
                                             <span class="lesson-time"><i class="fa-regular fa-clock"></i> 10:40</span>
                                         </div>
                                     </div>
@@ -145,7 +145,7 @@
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
-                                            <span class="lesson-name">2. Các thành phần private</span>
+                                            <span class="lesson-name">6. Các thành phần private</span>
                                             <span class="lesson-time"><i class="fa-regular fa-clock"></i> 8:28</span>
                                         </div>
                                     </div>
@@ -154,7 +154,7 @@
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
-                                            <span class="lesson-name">3. Các thành phần kiểu protected</span>
+                                            <span class="lesson-name">7. Các thành phần kiểu protected</span>
                                             <span class="lesson-time"><i class="fa-regular fa-clock"></i> 9:38</span>
                                         </div>
                                     </div>
@@ -163,7 +163,7 @@
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
-                                            <span class="lesson-name">4. Các thành phần static</span>
+                                            <span class="lesson-name">8. Các thành phần static</span>
                                             <span class="lesson-time"><i class="fa-regular fa-clock"></i> 10:12</span>
                                         </div>
                                     </div>
@@ -184,7 +184,7 @@
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
-                                            <span class="lesson-name">1. Constructors - Hàm tạo</span>
+                                            <span class="lesson-name">9. Constructors - Hàm tạo</span>
                                             <span class="lesson-time"><i class="fa-regular fa-clock"></i> 11:02</span>
                                         </div>
                                     </div>
@@ -193,7 +193,7 @@
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
-                                            <span class="lesson-name">2. Hàm set va hàm get</span>
+                                            <span class="lesson-name">10. Hàm set va hàm get</span>
                                             <span class="lesson-time"><i class="fa-regular fa-clock"></i> 7:57</span>
                                         </div>
                                     </div>
@@ -202,7 +202,7 @@
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
-                                            <span class="lesson-name">3. Destructors - Hàm hủy</span>
+                                            <span class="lesson-name">11. Destructors - Hàm hủy</span>
                                             <span class="lesson-time"><i class="fa-regular fa-clock"></i> 4:30</span>
                                         </div>
                                     </div>
@@ -211,7 +211,7 @@
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
-                                            <span class="lesson-name">4. Hàm bạn - friend funtions</span>
+                                            <span class="lesson-name">12. Hàm bạn - friend funtions</span>
                                             <span class="lesson-time"><i class="fa-regular fa-clock"></i> 7:19</span>
                                         </div>
                                     </div>
@@ -220,7 +220,7 @@
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
-                                            <span class="lesson-name">5. Hàm inline</span>
+                                            <span class="lesson-name">13. Hàm inline</span>
                                             <span class="lesson-time"><i class="fa-regular fa-clock"></i> 5:46</span>
                                         </div>
                                     </div>
@@ -230,7 +230,7 @@
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
-                                            <span class="lesson-name">6. Cách gọi hàm tạo của class cơ sở từ class dẫn xuất</span>
+                                            <span class="lesson-name">14. Cách gọi hàm tạo của class cơ sở từ class dẫn xuất</span>
                                             <span class="lesson-time"><i class="fa-regular fa-clock"></i> 7:04</span>
                                         </div>
                                     </div>
@@ -239,7 +239,7 @@
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
-                                            <span class="lesson-name">7. Hàm thành phần tái định nghĩa</span>
+                                            <span class="lesson-name">15. Hàm thành phần tái định nghĩa</span>
                                             <span class="lesson-time"><i class="fa-regular fa-clock"></i> 5:43</span>
                                         </div>
                                     </div>
@@ -259,7 +259,7 @@
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
-                                            <span class="lesson-name">1. Con trỏ this</span>
+                                            <span class="lesson-name">16. Con trỏ this</span>
                                             <span class="lesson-time"><i class="fa-regular fa-clock"></i> 5:39</span>
                                         </div>
                                     </div>
@@ -268,7 +268,7 @@
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
-                                            <span class="lesson-name">2. Con trỏ trỏ tới class</span>
+                                            <span class="lesson-name">17. Con trỏ trỏ tới class</span>
                                             <span class="lesson-time"><i class="fa-regular fa-clock"></i> 3:59</span>
                                         </div>
                                     </div>
@@ -289,7 +289,7 @@
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
-                                            <span class="lesson-name">1. Hằng đối tượng và hàm thành phần hằng</span>
+                                            <span class="lesson-name">18. Hằng đối tượng và hàm thành phần hằng</span>
                                             <span class="lesson-time"><i class="fa-regular fa-clock"></i> 10:55</span>
                                         </div>
                                     </div>
@@ -311,7 +311,7 @@
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
-                                            <span class="lesson-name">1. Polymophism - Tính đa hình (Nạp chồng và ghi đè)</span>
+                                            <span class="lesson-name">19. Polymophism - Tính đa hình (Nạp chồng và ghi đè)</span>
                                             <span class="lesson-time"><i class="fa-regular fa-clock"></i> 13:00</span>
                                         </div>
                                     </div>
@@ -320,7 +320,7 @@
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
-                                            <span class="lesson-name">1. Polymophism - Tính đa hình (Phương thức ảo)</span>
+                                            <span class="lesson-name">20. Polymophism - Tính đa hình (Phương thức ảo)</span>
                                             <span class="lesson-time"><i class="fa-regular fa-clock"></i> 05:02</span>
                                         </div>
                                     </div>
@@ -329,7 +329,7 @@
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
-                                            <span class="lesson-name">2. Encapsulation - Tính Đóng gói</span>
+                                            <span class="lesson-name">21. Encapsulation - Tính Đóng gói</span>
                                             <span class="lesson-time"><i class="fa-regular fa-clock"></i> 04:45</span>
                                         </div>
                                     </div>
@@ -338,7 +338,7 @@
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
-                                            <span class="lesson-name">3. Inheritance - Tính kế thừa</span>
+                                            <span class="lesson-name">22. Inheritance - Tính kế thừa</span>
                                             <span class="lesson-time"><i class="fa-regular fa-clock"></i> 07:33</span>
                                         </div>
                                     </div>
@@ -347,7 +347,7 @@
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
-                                            <span class="lesson-name">5. Thuộc tính truy cập và kiểu kế thừa trong C++</span>
+                                            <span class="lesson-name">23. Thuộc tính truy cập và kiểu kế thừa trong C++</span>
                                             <span class="lesson-time"><i class="fa-regular fa-clock"></i> 11:31</span>
                                         </div>
                                     </div>
@@ -356,7 +356,7 @@
                                     <div class="lesson-info">
                                         <i class="fa-regular fa-circle-play status-icon"></i>
                                         <div class="lesson-text">
-                                            <span class="lesson-name">6. Abstraction - Tính trừu tượng</span>
+                                            <span class="lesson-name">24. Abstraction - Tính trừu tượng</span>
                                             <span class="lesson-time"><i class="fa-regular fa-clock"></i> 05:17</span>
                                         </div>
                                     </div>
