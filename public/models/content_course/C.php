@@ -45,7 +45,7 @@
             <div class="curriculum-section">
                 <h3>Nội dung khóa học</h3>
                 <div class="course-stats">
-                    <span><strong>22</strong> bài học</span>
+                    <span><strong>25</strong> bài học</span>
                     <span>•</span>
                     <span><strong>11 giờ</strong> thời lượng</span>
                 </div>
@@ -88,15 +88,15 @@
                         </div>
                         <ul class="dropdown">
                             <li>
-                                <span><i class="fa-regular fa-circle-play"></i> 1. Làm quen với lập trình C và Dev-C++ qua một số ví dụ đơn giản</span>
+                                <span><i class="fa-regular fa-circle-play"></i> 4. Làm quen với lập trình C và Dev-C++ qua một số ví dụ đơn giản</span>
                                 <span class="time">30:14</span>
                             </li>
                             <li>
-                                <span><i class="fa-regular fa-circle-play"></i> 2. Các thành phần cơ bản trong ngôn ngữ lập trình C</span>
+                                <span><i class="fa-regular fa-circle-play"></i> 5. Các thành phần cơ bản trong ngôn ngữ lập trình C</span>
                                 <span class="time">30:10</span>
                             </li>
                             <li>
-                                <span><i class="fa-regular fa-circle-play"></i> 3. Một số bài tập tính toán số học đơn giản để làm quen với ngôn ngữ lập trình C</span>
+                                <span><i class="fa-regular fa-circle-play"></i> 6. Một số bài tập tính toán số học đơn giản để làm quen với ngôn ngữ lập trình C</span>
                                 <span class="time">33:31</span>
                             </li>
                         </ul>
@@ -111,11 +111,11 @@
                         </div>
                         <ul class="dropdown">
                             <li>
-                                <span><i class="fa-regular fa-circle-play"></i> 1. Hàm nhập xuất trong ngôn ngữ lập trình C</span>
+                                <span><i class="fa-regular fa-circle-play"></i> 7. Hàm nhập xuất trong ngôn ngữ lập trình C</span>
                                 <span class="time">40:14</span>
                             </li>
                             <li>
-                                <span><i class="fa-regular fa-circle-play"></i> 2. Chữa một số bài tập về nhập xuất cơ bản trong ngôn ngữ lập trình C</span>
+                                <span><i class="fa-regular fa-circle-play"></i> 8. Chữa một số bài tập về nhập xuất cơ bản trong ngôn ngữ lập trình C</span>
                                 <span class="time">39:12</span>
                             </li>
 
@@ -131,19 +131,19 @@
                         </div>
                         <ul class="dropdown">
                             <li>
-                                <span><i class="fa-regular fa-circle-play"></i> 1. Cấu trúc rẽ nhánh IF trong lập trình C - phần 1</span>
+                                <span><i class="fa-regular fa-circle-play"></i> 9. Cấu trúc rẽ nhánh IF trong lập trình C - phần 1</span>
                                 <span class="time">29:07</span>
                             </li>
                             <li>
-                                <span><i class="fa-regular fa-circle-play"></i> 2. Cấu trúc rẽ nhánh IF trong lập trình C - phần 2</span>
+                                <span><i class="fa-regular fa-circle-play"></i> 10. Cấu trúc rẽ nhánh IF trong lập trình C - phần 2</span>
                                 <span class="time">16:53</span>
                             </li>
                             <li>
-                                <span><i class="fa-regular fa-circle-play"></i> 3. Cấu trúc rẽ nhánh IF trong lập trình C - phần 3</span>
+                                <span><i class="fa-regular fa-circle-play"></i> 11. Cấu trúc rẽ nhánh IF trong lập trình C - phần 3</span>
                                 <span class="time">27:56</span>
                             </li>
                             <li>
-                                <span><i class="fa-regular fa-circle-play"></i> 4. Cấu trúc rẽ nhánh switch... case trong lập trình C</span>
+                                <span><i class="fa-regular fa-circle-play"></i> 12. Cấu trúc rẽ nhánh switch... case trong lập trình C</span>
                                 <span class="time">39:57</span>
                             </li>
                         </ul>
@@ -158,11 +158,11 @@
                         </div>
                         <ul class="dropdown">
                             <li>
-                                <span><i class="fa-regular fa-circle-play"></i> 1. Sử dụng for lồng nhau trong ngôn ngữ lập trình C</span>
+                                <span><i class="fa-regular fa-circle-play"></i> 13. Sử dụng for lồng nhau trong ngôn ngữ lập trình C</span>
                                 <span class="time">13:19</span>
                             </li>
                             <li>
-                                <span><i class="fa-regular fa-circle-play"></i> 2. Cấu trúc lặp while và do ... while trong ngôn ngữ lập trình C</span>
+                                <span><i class="fa-regular fa-circle-play"></i> 14. Cấu trúc lặp while và do ... while trong ngôn ngữ lập trình C</span>
                                 <span class="time">21:29</span>
                             </li>
 
@@ -178,11 +178,11 @@
                         </div>
                         <ul class="dropdown">
                             <li>
-                                <span><i class="fa-regular fa-circle-play"></i> 1. Xây dựng hàm (chương trình con) trong ngôn ngữ lập trình C</span>
+                                <span><i class="fa-regular fa-circle-play"></i> 15. Xây dựng hàm (chương trình con) trong ngôn ngữ lập trình C</span>
                                 <span class="time">28:14</span>
                             </li>
                             <li>
-                                <span><i class="fa-regular fa-circle-play"></i> 2. Xây dựng hàm (chương trình con) trong ngôn ngữ lập trình C (Phần 2)</span>
+                                <span><i class="fa-regular fa-circle-play"></i> 16. Xây dựng hàm (chương trình con) trong ngôn ngữ lập trình C (Phần 2)</span>
                                 <span class="time">28:04</span>
                             </li>
 
@@ -198,15 +198,15 @@
                         </div>
                         <ul class="dropdown">
                             <li>
-                                <span><i class="fa-regular fa-circle-play"></i> 1. Mảng và chuỗi trong ngôn ngữ lập trình C</span>
+                                <span><i class="fa-regular fa-circle-play"></i> 17. Mảng và chuỗi trong ngôn ngữ lập trình C</span>
                                 <span class="time">34:10</span>
                             </li>
                             <li>
-                                <span><i class="fa-regular fa-circle-play"></i> 2. Mảng 2 chiều trong ngôn ngữ lập trình C</span>
+                                <span><i class="fa-regular fa-circle-play"></i> 18. Mảng 2 chiều trong ngôn ngữ lập trình C</span>
                                 <span class="time">34:28</span>
                             </li>
                             <li>
-                                <span><i class="fa-regular fa-circle-play"></i> 3. Chuỗi trong ngôn ngữ lập trình C</span>
+                                <span><i class="fa-regular fa-circle-play"></i> 19. Chuỗi trong ngôn ngữ lập trình C</span>
                                 <span class="time">18:54</span>
                             </li>
                         </ul>
@@ -221,15 +221,15 @@
                         </div>
                         <ul class="dropdown">
                             <li>
-                                <span><i class="fa-regular fa-circle-play"></i> 1. Sử dụng con trỏ (biến con trỏ) trong ngôn ngữ lập trình C (phần 1)</span>
+                                <span><i class="fa-regular fa-circle-play"></i> 20. Sử dụng con trỏ (biến con trỏ) trong ngôn ngữ lập trình C (phần 1)</span>
                                 <span class="time">30:52</span>
                             </li>
                             <li>
-                                <span><i class="fa-regular fa-circle-play"></i> 2. Sử dụng con trỏ (biến con trỏ) trong ngôn ngữ lập trình C (phần 2)</span>
+                                <span><i class="fa-regular fa-circle-play"></i> 21. Sử dụng con trỏ (biến con trỏ) trong ngôn ngữ lập trình C (phần 2)</span>
                                 <span class="time">31:57</span>
                             </li>
                             <li>
-                                <span><i class="fa-regular fa-circle-play"></i> 3. Sử dụng con trỏ (biến con trỏ) trong ngôn ngữ lập trình C (phần 3)</span>
+                                <span><i class="fa-regular fa-circle-play"></i> 22. Sử dụng con trỏ (biến con trỏ) trong ngôn ngữ lập trình C (phần 3)</span>
                                 <span class="time">34:25</span>
                             </li>
                         </ul>
@@ -244,11 +244,11 @@
                         </div>
                         <ul class="dropdown">
                             <li>
-                                <span><i class="fa-regular fa-circle-play"></i> 1. Kiểu dữ liệu tự định nghĩa struct trong C - học ngôn ngữ lập trình C (Phần 1)</span>
+                                <span><i class="fa-regular fa-circle-play"></i> 23. Kiểu dữ liệu tự định nghĩa struct trong C - học ngôn ngữ lập trình C (Phần 1)</span>
                                 <span class="time">23:57</span>
                             </li>
                             <li>
-                                <span><i class="fa-regular fa-circle-play"></i> 2. Kiểu dữ liệu tự định nghĩa struct trong C - học ngôn ngữ lập trình C (Phần 2)</span>
+                                <span><i class="fa-regular fa-circle-play"></i> 24. Kiểu dữ liệu tự định nghĩa struct trong C - học ngôn ngữ lập trình C (Phần 2)</span>
                                 <span class="time">23:17</span>
                             </li>
 
@@ -264,7 +264,7 @@
                         </div>
                         <ul class="dropdown">
                             <li>
-                                <span><i class="fa-regular fa-circle-play"></i> 1. Kiểu enum (kiểu liệt kê) trong C - học ngôn ngữ lập trình C</span>
+                                <span><i class="fa-regular fa-circle-play"></i> 25. Kiểu enum (kiểu liệt kê) trong C - học ngôn ngữ lập trình C</span>
                                 <span class="time">23:17</span>
                             </li>
 
@@ -287,17 +287,17 @@
         <div class="right_content_wrapper">
             <div class="course-card">
                 <div class="course-img-wrapper">
-                    <img src="../img/lap_trinh_c.png" alt="Khóa học C">
+                    <img src="./models/img/lap_trinh_c.png" alt="Khóa học C">
                     <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
                 </div>
 
                 <div class="card-body">
-                    <div class="price-tag">Miễn phí</div>
-                    <button class="btn_buy">Đăng ký học ngay</button>
+                    <div class="price-tag">Khoá học C beginner</div>
+                    <a class="btn_buy" href="./models/course/c_video.php">Xem ngay</a>
 
                     <ul class="course-features">
                         <li><i class="fa-solid fa-gauge-high"></i> Trình độ cơ bản</li>
-                        <li><i class="fa-solid fa-film"></i> Tổng số 22 bài học</li>
+                        <li><i class="fa-solid fa-film"></i> Tổng số 25 bài học</li>
                         <li><i class="fa-solid fa-clock"></i> Thời lượng 11h</li>
                         <li><i class="fa-solid fa-battery-full"></i> Học mọi lúc, mọi nơi</li>
                         <li><i class="fa-solid fa-certificate"></i> Cấp chứng chỉ khi hoàn thành</li>
