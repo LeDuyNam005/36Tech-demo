@@ -227,7 +227,7 @@
         </div>
     </div>
     </div>
-
+    <script src="./assets/js/search_storage.js"></script>
 </body>
 
 </html>
