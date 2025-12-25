@@ -192,7 +192,10 @@ button:focus {
   text-align: center;
 }
 
+<<<<<<< HEAD
 /* Responsive Mobile */
+=======
+>>>>>>> 085d1e26c0c71eb3db2a69bee11047eba323f677
 @media (max-width: 576px) {
   .auth-form {
     width: 92%;
@@ -206,12 +209,21 @@ button:focus {
 }
 
 /* =========================================
+<<<<<<< HEAD
           ADMIN DASHBOARD STYLES
    ========================================= */
 
 /* OVERRIDE LOGIN */
 body.admin-page {
   display: block !important; /* Hủy Flex*/
+=======
+                    ADMIN 
+   ========================================= */
+
+/* ghi de LOGIN */
+body.admin-page {
+  display: block !important; /* Hủy flex*/
+>>>>>>> 085d1e26c0c71eb3db2a69bee11047eba323f677
   height: auto;
   background: #f4f6f8;
   padding-bottom: 50px;
@@ -245,7 +257,10 @@ body.admin-page {
   color: #fff;
 }
 
+<<<<<<< HEAD
 /* Card layout cho Dashboard */
+=======
+>>>>>>> 085d1e26c0c71eb3db2a69bee11047eba323f677
 .card {
   background: #fff;
   border-radius: 10px;
@@ -253,7 +268,11 @@ body.admin-page {
   overflow: hidden;
 }
 
+<<<<<<< HEAD
 /* Reset style admin - dashboard */
+=======
+/* reset class */
+>>>>>>> 085d1e26c0c71eb3db2a69bee11047eba323f677
 .admin-container form {
   background: transparent;
   border: none;
@@ -264,17 +283,28 @@ body.admin-page {
   display: inline-block;
 }
 
+<<<<<<< HEAD
 /* Table styles */
+=======
+>>>>>>> 085d1e26c0c71eb3db2a69bee11047eba323f677
 table {
   width: 100%;
   border-collapse: collapse;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 085d1e26c0c71eb3db2a69bee11047eba323f677
 th,
 td {
   padding: 15px 20px;
   text-align: left;
   border-bottom: 1px solid #eee;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 085d1e26c0c71eb3db2a69bee11047eba323f677
 th {
   background: #fafafa;
   font-weight: 600;
@@ -286,7 +316,10 @@ tr:hover {
   background: #f9f9f9;
 }
 
+<<<<<<< HEAD
 /* Badge Role */
+=======
+>>>>>>> 085d1e26c0c71eb3db2a69bee11047eba323f677
 .badge {
   padding: 5px 10px;
   border-radius: 20px;
@@ -302,7 +335,10 @@ tr:hover {
   color: #666;
 }
 
+<<<<<<< HEAD
 /* Buttons Action */
+=======
+>>>>>>> 085d1e26c0c71eb3db2a69bee11047eba323f677
 .btn-delete {
   color: #ff6b6b;
   border: none;
@@ -316,7 +352,10 @@ tr:hover {
   transform: scale(1.1);
 }
 
+<<<<<<< HEAD
 /* Alerts tĩnh trong dashboard */
+=======
+>>>>>>> 085d1e26c0c71eb3db2a69bee11047eba323f677
 .alert {
   padding: 15px;
   margin-bottom: 20px;
@@ -333,7 +372,10 @@ tr:hover {
   border: 1px solid #f5c6cb;
 }
 
+<<<<<<< HEAD
 /* Avatar */
+=======
+>>>>>>> 085d1e26c0c71eb3db2a69bee11047eba323f677
 .user-info {
   display: flex;
   align-items: center;

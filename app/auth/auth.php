@@ -38,11 +38,3 @@ function getUserRole()
 {
     return $_SESSION['role'] ?? 'guest';
 }
-
-function redirectIfLoggedIn()
-{
-    if (isLoggedIn()) {
-        header('Location: /PJ/36Tech-demo/public/');
-        exit;
-    }
-}

@@ -40,10 +40,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['avatar'] =  $user['avatar'] ?? '../image/default-avatar.jpg';
                 $_SESSION['role'] =  $user['role'];
 
-                // lưu cookie 5 phút
+                // lưu cookie 7 ngày
                 $token = bin2hex(random_bytes(16));
-                setcookie('auth_token', $token, time() + 5 * 60, '/', '', false, true);
-                setcookie('username', $username, time() + 5 * 60, '/', '', false, false);
+                setcookie('auth_token', $token, time() + 7 * 24 * 60, '/', '', false, true);
+                setcookie('username', $username, time() + 7 * 24 * 60, '/', '', false, false);
                 $success  = "Đăng nhập thành công! Xin chào " . $username;
                 $redirect = true;
             }
