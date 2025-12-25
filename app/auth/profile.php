@@ -145,7 +145,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <input type="text" value="<?= htmlspecialchars($user['username']) ?>" class="readonly-field" readonly>
 
             <div class="input">Email</div>
-            <input type="text" value="<?= htmlspecialchars($user['email']) ?>" class="readonly-field" readonly>
+            <input type="text" value="<?= htmlspecialchars($user['email']) ?>">
 
             <div class="input">Họ và tên</div>
             <input type="text" name="fullname" id="fullname" value="<?= htmlspecialchars($user['fullname']) ?>" required>

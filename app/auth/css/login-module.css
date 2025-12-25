@@ -192,7 +192,6 @@ button:focus {
   text-align: center;
 }
 
-/* Responsive Mobile */
 @media (max-width: 576px) {
   .auth-form {
     width: 92%;
@@ -206,12 +205,12 @@ button:focus {
 }
 
 /* =========================================
-          ADMIN DASHBOARD STYLES
+                    ADMIN 
    ========================================= */
 
-/* OVERRIDE LOGIN */
+/* ghi de LOGIN */
 body.admin-page {
-  display: block !important; /* Hủy Flex*/
+  display: block !important; /* Hủy flex*/
   height: auto;
   background: #f4f6f8;
   padding-bottom: 50px;
@@ -245,7 +244,6 @@ body.admin-page {
   color: #fff;
 }
 
-/* Card layout cho Dashboard */
 .card {
   background: #fff;
   border-radius: 10px;
@@ -253,7 +251,7 @@ body.admin-page {
   overflow: hidden;
 }
 
-/* Reset style admin - dashboard */
+/* reset class */
 .admin-container form {
   background: transparent;
   border: none;
@@ -264,17 +262,18 @@ body.admin-page {
   display: inline-block;
 }
 
-/* Table styles */
 table {
   width: 100%;
   border-collapse: collapse;
 }
+
 th,
 td {
   padding: 15px 20px;
   text-align: left;
   border-bottom: 1px solid #eee;
 }
+
 th {
   background: #fafafa;
   font-weight: 600;
@@ -286,7 +285,6 @@ tr:hover {
   background: #f9f9f9;
 }
 
-/* Badge Role */
 .badge {
   padding: 5px 10px;
   border-radius: 20px;
@@ -302,7 +300,6 @@ tr:hover {
   color: #666;
 }
 
-/* Buttons Action */
 .btn-delete {
   color: #ff6b6b;
   border: none;
@@ -316,7 +313,6 @@ tr:hover {
   transform: scale(1.1);
 }
 
-/* Alerts tĩnh trong dashboard */
 .alert {
   padding: 15px;
   margin-bottom: 20px;
@@ -333,7 +329,6 @@ tr:hover {
   border: 1px solid #f5c6cb;
 }
 
-/* Avatar */
 .user-info {
   display: flex;
   align-items: center;
