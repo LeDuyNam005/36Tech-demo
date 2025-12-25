@@ -6,29 +6,23 @@ requireLogin();
 ?>
 
 <link rel="stylesheet" href="<?php echo ASSETS; ?>css/index.css">
-<script src="<?= ASSETS ?>js/search_course.js"></script>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 <header class="header">
     <div class="header-inner">
         <div class="header-inner-left">
             <a href="<?php echo BASE_URL; ?>index.php" class="logo" aria-label="36Tech - Home">
-                <img style="border-radius: 10px;" src="<?php echo BASE_URL; ?>assets/image/logo36Tech.png" alt=""
-                    width="50px" height="50px">
+                <img style="border-radius: 10px;" src="<?php echo BASE_URL; ?>assets/image/logo36Tech.png" alt="" width="50px" height="50px">
                 <span class="site-title">Công cụ học lập trình</span>
             </a>
         </div>
 
         <div class="header-inner-center">
-            <form class="search" role="search" autocomplete="off">
+            <form class="search" role="search" action="#" method="get">
                 <div class="search-wrapper">
-                    <input id="search-input" type="search" placeholder="Tìm kiếm khóa học, bài viết, video, ..."
-                        autocomplete="off">
-
-                    <button type="submit" class="search-btn">🔍</button>
-
-                    <!-- dropdown kết quả -->
-                    <div class="search-result" id="search-result"></div>
+                    <input id="search-input" name="q" type="search" placeholder="Tìm kiếm khóa học, bài viết, video, ..." autocomplete="off">
+                    <button type="submit" class="search-btn" aria-label="Tìm kiếm"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </form>
         </div>
@@ -44,8 +38,7 @@ requireLogin();
                         </a>
                     <?php } ?>
 
-                    <a href="<?php echo AUTH; ?>auth/profile.php"
-                        style="display:flex; align-items:center; gap:8px; padding: 4px 12px; border-radius:999px; border:1px solid #218080; text-decoration: none; color: inherit; background: #fff;">
+                    <a href="<?php echo AUTH; ?>auth/profile.php" style="display:flex; align-items:center; gap:8px; padding: 4px 12px; border-radius:999px; border:1px solid #218080; text-decoration: none; color: inherit; background: #fff;">
 
                         <?php
                         $avatarName = !empty($_SESSION['avatar']) ? $_SESSION['avatar'] : 'default-avatar.jpg';
@@ -60,8 +53,7 @@ requireLogin();
                         </span>
                     </a>
 
-                    <a href="<?php echo AUTH; ?>auth/logout.php" class="btn btn-ghost"
-                        style="color:red; font-size: 19px;">
+                    <a href="<?php echo AUTH; ?>auth/logout.php" class="btn btn-ghost" style="color:red; font-size: 19px;">
                         <i class="fa-solid fa-right-from-bracket"></i>
                     </a>
                 </div>
