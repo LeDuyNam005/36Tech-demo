@@ -331,14 +331,8 @@ button.prev:hover, button.next:hover {
 
 .main-left-btn .btn-home {
     background-color: #ffffff;
-    color: #1a90ff;
-    /* Chữ màu xanh */
-    font-weight: 600;
-    /* Tạo điểm nhấn riêng cho nút đang chọn */
-    border: 1px solid rgba(26, 144, 255, 0.3);
-    /* Viền xanh nhạt */
-    box-shadow: 0 4px 12px rgba(26, 144, 255, 0.15);
-    /* Bóng xanh nhẹ */
+    color: black;
+   
 }
 
 .main-left-btn button:hover {

@@ -11,9 +11,9 @@
                     <div class="slide">
                         <div class="content">
                             <h2><a href="#">Học HTML CSS cho người mới 👑</a></h2>
-                            <p>Thực hành dự án với Figma, hàng trăm bài tập, hướng dẫn 100% bởi Sơn Đặng, tặng kèm Flashcards,
+                            <p>Thực hành dự án với Figma, hàng trăm bài tập, hướng dẫn 100%,
                                 v.v.</p>
-                            <button class="cta">HỌC THỬ MIỄN PHÍ</button>
+                            <button class="cta">ĐĂNG KÍ NGAY</button>
                         </div>
                         <div class="image">
                             <a href="#"><img src="./assets/image/html.png" alt="" style="height: 250px; width: 450px;"></a>
@@ -25,7 +25,7 @@
                             <p>Khóa học ReactJS từ cơ bản tới nâng cao. Kết quả của khóa học này là bạn có thể làm hầu hết các
                                 dự
                                 án thường gặp với ReactJS.</p>
-                            <button class="cta">HỌC THỬ MIỄN PHÍ</button>
+                            <button class="cta">ĐĂNG KÍ NGAY</button>
                         </div>
                         <div class="image">
                             <a href="#"><img src="./assets/image/Banner_web_ReactJS.png" alt=""
@@ -34,11 +34,11 @@
                     </div>
                     <div class="slide">
                         <div class="content">
-                            <h2><a href="#">Thành Quả của Học Viên</a></h2>
+                            <h2><a href="#">Lộ Trình học bài bản</a></h2>
                             <p>Để đạt được kết quả tốt trong mọi việc ta cần xác định mục tiêu rõ ràng cho việc đó. Học lập
                                 trình
                                 cũng không là ngoại lệ.</p>
-                            <button class="cta">XEM THÀNH QUẢ</button>
+                            <button class="cta" onclick="window.location.href='<?php echo BASE_URL; ?>lotrinh.php'">XEM LỘ TRÌNH</button>
                         </div>
                         <div class="image">
                             <a href="#"><img src="./assets/image/Banner_01_2.png" alt=""
@@ -85,8 +85,8 @@
                         <div class="info">
                             <a href="./index.php?page_layout=c" style="font-size: 20px;">Lập trình C cho người mới bắt đầu</a>
                             <div class="btoom">
-                                <p><i class="fa-regular fa-circle-play"></i>9</p>
-                                <p><i class="fa-regular fa-clock"></i>3h12p</p>
+                                <p><i class="fa-regular fa-circle-play"></i>25</p>
+                                <p><i class="fa-regular fa-clock"></i>11h</p>
                             </div>
                         </div>
                     </div>
