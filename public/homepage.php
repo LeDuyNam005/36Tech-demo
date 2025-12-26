@@ -22,7 +22,8 @@
                     <div class="slide">
                         <div class="content">
                             <h2><a href="#">Học ReactJS Miễn Phí!</a></h2>
-                            <p>Khóa học ReactJS từ cơ bản tới nâng cao. Kết quả của khóa học này là bạn có thể làm hầu hết các
+                            <p>Khóa học ReactJS từ cơ bản tới nâng cao. Kết quả của khóa học này là bạn có thể làm hầu
+                                hết các
                                 dự
                                 án thường gặp với ReactJS.</p>
                             <a class="cta" href="index.php?page_layout=reactJS">ĐĂNG KÍ NGAY</a>
@@ -34,10 +35,12 @@
                     <div class="slide">
                         <div class="content">
                             <h2><a href="#">Lộ Trình học bài bản</a></h2>
-                            <p>Để đạt được kết quả tốt trong mọi việc ta cần xác định mục tiêu rõ ràng cho việc đó. Học lập
+                            <p>Để đạt được kết quả tốt trong mọi việc ta cần xác định mục tiêu rõ ràng cho việc đó. Học
+                                lập
                                 trình
                                 cũng không là ngoại lệ.</p>
-                            <a class="cta" onclick="window.location.href='<?php echo BASE_URL; ?>lotrinh.php'">XEM LỘ TRÌNH</a>
+                            <a class="cta" onclick="window.location.href='<?php echo BASE_URL; ?>lotrinh.php'">XEM LỘ
+                                TRÌNH</a>
                         </div>
                         <div class="image">
                             <a href="#"><img src="./assets/image/Banner_01_2.png" alt=""></a>
@@ -46,9 +49,11 @@
                     <div class="slide">
                         <div class="content">
                             <h2><a href="#">Lớp học FullStack Online</a></h2>
-                            <p>Học online trực tiếp qua Zoom, phù hợp nếu bạn muốn được review code, chấm bài trực tiếp bởi
+                            <p>Học online trực tiếp qua Zoom, phù hợp nếu bạn muốn được review code, chấm bài trực tiếp
+                                bởi
                                 giảng
-                                viên và trợ giảng giàu kinh nghiệm. Giờ học linh hoạt, phù hợp cả sinh viên và người đi làm.</p>
+                                viên và trợ giảng giàu kinh nghiệm. Giờ học linh hoạt, phù hợp cả sinh viên và người đi
+                                làm.</p>
                             <a class="cta" href="#">TƯ VẤN MIỄN PHÍ</a>
                         </div>
                         <div class="image">
@@ -58,7 +63,8 @@
                     <div class="slide">
                         <div class="content">
                             <h2><a href="#">36Tech trên Youtube</a></h2>
-                            <p>36Tech được nhắc tới ở mọi nơi, ở đâu có cơ hội việc làm cho nghề IT và có những con người yêu
+                            <p>36Tech được nhắc tới ở mọi nơi, ở đâu có cơ hội việc làm cho nghề IT và có những con
+                                người yêu
                                 thích
                                 lập trình 36Tech sẽ ở đó.</p>
                             <a class="cta" href="#">ĐĂNG KÍ KÊNH</a>
@@ -80,7 +86,8 @@
                     <div class="card_box">
                         <div><img src="./models/img/lap_trinh_c.png" class="img_card"> </div>
                         <div class="info">
-                            <a href="./index.php?page_layout=c" style="font-size: 20px;">Lập trình C cho người mới bắt đầu</a>
+                            <a href="./index.php?page_layout=c" style="font-size: 20px;">Lập trình C cho người mới bắt
+                                đầu</a>
                             <div class="btoom">
                                 <p><i class="fa-solid fa-film"></i> 25 bài học</p>
                                 <p><i class="fa-solid fa-clock"></i> 11h 02p</p>
@@ -153,7 +160,8 @@
                     <div class="card_box">
                         <div><img src="./models/img/jsnangcao.png" class="img_card"> </div>
                         <div class="info">
-                            <a href="index.php?page_layout=javaScriptNangCao" style="font-size: 20px;">Javascript nâng cao</a>
+                            <a href="index.php?page_layout=javaScriptNangCao" style="font-size: 20px;">Javascript nâng
+                                cao</a>
                             <div class="btoom">
                                 <p><i class="fa-solid fa-film"></i> 19 bài học</p>
                                 <p><i class="fa-solid fa-clock"></i> 8h 41p</p>
@@ -175,7 +183,8 @@
                     <div class="card_box">
                         <div><img src="./models/img/dont_touch.png" class="img_card"> </div>
                         <div class="info">
-                            <a href="index.php?page_layout=dont_touch_yface" style="font-size: 20px;">Don't Touch Your Face</a>
+                            <a href="index.php?page_layout=dont_touch_yface" style="font-size: 20px;">Don't Touch Your
+                                Face</a>
                             <div class="btoom">
                                 <p><i class="fa-solid fa-film"></i> 13 bài học</p>
                                 <p><i class="fa-solid fa-clock"></i> 02h 03p</p>
@@ -186,7 +195,8 @@
                     <div class="card_box">
                         <div><img src="./models/img/responsive.jpg" class="img_card"> </div>
                         <div class="info">
-                            <a href="index.php?page_layout=reponsive" style="font-size: 20px;">Responsive @web design</a>
+                            <a href="index.php?page_layout=reponsive" style="font-size: 20px;">Responsive @web
+                                design</a>
                             <div class="btoom">
                                 <p><i class="fa-solid fa-film"></i> 22 bài học</p>
                                 <p><i class="fa-solid fa-clock"></i> 03h 56p</p>
@@ -195,33 +205,35 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="c1"> <!--  hàng 2 -->
-            <h2>Khóa học khác</h2>
-            <div class="list_khoa_hoc">
-                <div class="card_box">
-                    <div><img src="./models/img/2.png" class="img_card"> </div>
-                    <div class="info">
-                        <a href="index.php?page_layout=html_css" style="font-size: 20px;">HTML & CSS</a>
-                        <div class="btoom">
-                            <p><i class="fa-solid fa-film"></i> 43 bài học</p>
-                            <p><i class="fa-solid fa-clock"></i> 10h 45p</p>
+            <div class="c1"> <!--  hàng 2 -->
+                <h2>Khóa học khác</h2>
+                <div class="list_khoa_hoc">
+                    <div class="card_box">
+                        <div><img src="./models/img/2.png" class="img_card"> </div>
+                        <div class="info">
+                            <a href="index.php?page_layout=html_css" style="font-size: 20px;">HTML & CSS</a>
+                            <div class="btoom">
+                                <p><i class="fa-solid fa-film"></i> 43 bài học</p>
+                                <p><i class="fa-solid fa-clock"></i> 10h 45p</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="card_box">
-                    <div><img src="./models/img/node_js.jpg" class="img_card"> </div>
-                    <div class="info">
-                        <a href="index.php?page_layout=node_js" style="font-size: 20px;">Học NodeJS</a>
-                        <div class="btoom">
-                            <p><i class="fa-solid fa-film"></i> 36 bài học</p>
-                            <p><i class="fa-solid fa-clock"></i> 11h 58p</p>
+                    <div class="card_box">
+                        <div><img src="./models/img/node_js.jpg" class="img_card"> </div>
+                        <div class="info">
+                            <a href="index.php?page_layout=node_js" style="font-size: 20px;">Học NodeJS</a>
+                            <div class="btoom">
+                                <p><i class="fa-solid fa-film"></i> 36 bài học</p>
+                                <p><i class="fa-solid fa-clock"></i> 11h 58p</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
     </div>
     </div>
     <script src="./assets/js/search_storage.js"></script>
