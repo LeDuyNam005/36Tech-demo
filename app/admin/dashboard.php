@@ -84,6 +84,7 @@ $result = mysqli_query($conn, $sql);
                     <tr>
                         <th>ID</th>
                         <th>Username</th>
+                        <th>Họ tên</th>
                         <th>Email</th>
                         <th>Ngày tạo</th>
                         <th>Vai trò</th>
@@ -95,6 +96,7 @@ $result = mysqli_query($conn, $sql);
                         <tr>
                             <td><?= $row['id'] ?></td>
                             <td><?= htmlspecialchars($row['username']) ?></td>
+                            <td><?= htmlspecialchars($row['fullname']) ?></td>
                             <td><?= htmlspecialchars($row['email']) ?></td>
                             <td><?= htmlspecialchars($row['created_at']) ?></td>
                             <td>
